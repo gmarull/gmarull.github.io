@@ -1,3 +1,7 @@
+All content under `_posts/` is Copyright Gerard Marull-Paretas, the rest,
+unless other licenses are specified in place is licensed under the GPLv3,
+displayed below.
+
 GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 
