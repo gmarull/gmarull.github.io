@@ -74,6 +74,38 @@
 	font-style: italic;
 }
 
+/* Icon font (based on FontAwesome) */
+@font-face {
+  font-family: 'icons';
+  src: url('../fonts/icons/icons.eot?1388016');
+  src: url('../fonts/icons/icons.eot?1388016#iefix') format('embedded-opentype'),
+       url('../fonts/icons/icons.woff?1388016') format('woff'),
+       url('../fonts/icons/icons.ttf?1388016') format('truetype'),
+       url('../fonts/icons/icons.svg?1388016#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+[class^="icon-"]:before {
+  display: inline-block;
+  width: 1em;
+  margin-right: .2em;
+  margin-left: .2em;
+  font-family: "icons";
+  font-variant: normal;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  text-align: center;
+  text-transform: none;
+}
+
+.icon-globe:before { content: '\e800'; }
+.icon-home:before { content: '\e801'; }
+.icon-mail:before { content: '\e802'; }
+.icon-print:before { content: '\e829'; }
+
 
 /**
  * 1. Base
@@ -674,9 +706,17 @@ label[for=site-nav-trigger] {
   text-align: right;
 }
 
-.cv-print a {
-  color: #57ad68;
+.cv-print-btn {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  padding-top: 0.35em;
+  font-size: 1.3em;
+  text-align: center;
+  color: #fff;
+  background-color: #57ad68;
   border: none;
+  border-radius: 50%;
 }
 
 @media screen and (max-width: 45em) {

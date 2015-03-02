@@ -10,16 +10,15 @@
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
   <link rel="shortcut icon" href="{{ '/assets/images/logo.png' | prepend: site.baseurl }}" />
 
-  <!-- Fonts -->
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <!-- Normalize.css -->
+  <link rel="stylesheet" href="{{ "/assets/css/normalize.min.css" | prepend: site.baseurl }}">
+
+  <!-- TypeKit -->
   <script src="//use.typekit.net/qmh8sgv.js"></script>
   <script>try{Typekit.load();}catch(e){}</script>
-  
-  <!-- Normalize.css -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css">
 
-  <link rel="stylesheet" href="{{ "/assets/css/style.css" | prepend: site.baseurl }}">
-  <link rel="stylesheet" href="{{ "/assets/css/code.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/assets/css/style.min.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/assets/css/code.min.css" | prepend: site.baseurl }}">
 
   <script type="text/javascript"
     src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG">
