@@ -61,6 +61,7 @@ var utils = (function () {
             this.ctx.lineTo(f(u), g(u));
         }
 
+        this.ctx.closePath();
         this.ctx.restore();
 
         /* Line style, color, etc. */
