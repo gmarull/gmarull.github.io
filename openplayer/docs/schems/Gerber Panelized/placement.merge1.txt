@@ -1,0 +1,10 @@
+openplayer 0.200 0.200
+openplayer 0.200 4.125
+openplayer 2.225 0.200
+openplayer 2.225 4.125
+openplayer 4.250 0.200
+openplayer 4.250 4.125
+openplayer 6.275 0.200
+openplayer 6.275 4.125
+openplayer 8.300 0.200
+openplayer 8.300 4.125

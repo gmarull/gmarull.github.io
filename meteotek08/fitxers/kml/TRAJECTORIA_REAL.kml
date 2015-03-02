@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Llançament Sonda Meteotek08 (28/02/09)</name>
+	<Style id="track">
+		<IconStyle>
+			<scale>1.2</scale>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>400000aa</color>
+		</PolyStyle>
+	</Style>
+	<Style id="llancament">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-circle-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="aterratge">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-square.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-square-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="explosio">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/target.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Placemark>
+		<name>Trajectòria</name>
+		<styleUrl>#track</styleUrl>
+		<LineString>
+			<extrude>1</extrude>
+			<tessellate>1</tessellate>
+			<altitudeMode>absolute</altitudeMode>
+			<coordinates>
+-0.157986,41.495795,323.0000000000001 -0.170939,41.500151,1357 -0.179208,41.509269,2335 -0.191489,41.520751,3343 -0.20722,41.535737,4364.000000000001 -0.224311,41.550237,5355.000000000001 -0.242529,41.565878,6394.000000000001 -0.254546,41.578311,7345.000000000001 -0.263895,41.593479,8353 -0.268745,41.612204,9308 -0.285118,41.631972,10341 -0.307965,41.657452,11378 -0.31069,41.681723,12327 -0.291692,41.696093,13317 -0.258994,41.706317,14320 -0.224422,41.716677,15361 -0.191202,41.721703,16348 -0.15737,41.721964,17373 -0.13196,41.724071,18331 -0.104884,41.720235,19360 -0.081897,41.716402,20371 -0.06453299999999999,41.709806,21319 -0.042754,41.701928,22368 -0.03005,41.69458,23367 -0.019515,41.682113,24347 -0.012145,41.669926,25365 0.000473,41.666657,26351 0.016792,41.667965,27379 0.050307,41.658037,28357 0.09131199999999999,41.661234,29385 0.178668,41.662573,30677 0.185246,41.662815,29839 0.190069,41.662963,28484 0.192585,41.662479,27541 0.195193,41.662376,26400 0.196338,41.662092,25361 0.197339,41.661488,24387 0.197577,41.660811,23695 0.199199,41.659413,22417 0.200491,41.658559,21635 0.2033,41.657751,20533 0.204916,41.657094,19684 0.209132,41.656472,18406 0.213576,41.656509,17252 0.218873,41.656649,16326 0.225314,41.657604,15350 0.23221,41.660223,14315 0.237625,41.662529,13239 0.241022,41.664828,12352 0.2432,41.671126,11265 0.23907,41.677858,10352 0.233242,41.686706,9121 0.228738,41.694478,8153.000000000001 0.226161,41.701035,7277.000000000001 0.222114,41.70767,6283.000000000001 0.214504,41.714249,5379 0.203333,41.721354,4363 0.194816,41.730274,3342 0.189792,41.736163,2580 0.183913,41.741421,1545 0.179189,41.743811,881.0000000000001 0.176609,41.744929,264.0000000000001 </coordinates>
+		</LineString>
+	</Placemark>
+	<Folder>
+		<name>Punts</name>
+		<Placemark>
+			<name>Llançament</name>
+			<styleUrl>#llancament</styleUrl>
+			<Point>
+				<altitudeMode>absolute</altitudeMode>
+				<coordinates>-0.157986,41.495795,323.0000000000001</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Explosió</name>
+			<styleUrl>#explosio</styleUrl>
+			<Point>
+				<altitudeMode>absolute</altitudeMode>
+				<coordinates>0.178668,41.662573,30677</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Aterratge</name>
+			<styleUrl>#aterratge</styleUrl>
+			<Point>
+				<altitudeMode>absolute</altitudeMode>
+				<coordinates>0.176609,41.744929,264.0000000000001</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

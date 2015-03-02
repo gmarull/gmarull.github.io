@@ -1,0 +1,336 @@
+/*  
+Theme Name: Meteotek08
+Theme URI: http://teslabs.com/
+Description: Tema pel Wordpress creat especialment pel projecte Meteotek08
+Version: 1.0
+Author: Gerard Marull Paretas
+Author URI: http://teslabs.com/
+*/
+
+
+/*******************/
+/* General Styling */
+/*******************/
+body {
+	font-size: 12px;
+	font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+	text-align: center;
+	background-color: black;
+}
+
+hr {
+	border: none;
+	height: 1px;
+	background-color: #bababa ;
+	color: #bababa ;
+}
+
+img{
+	border: none;
+}
+
+
+/****************/
+/* Text styling */
+/****************/
+
+/* General */
+p {
+	font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+	font-size: 12px;
+}
+
+a{
+	text-decoration: none;
+	font-weight: bold;
+	color: #565656;
+}
+
+a:hover{
+	color: #1968af;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+h3{
+	font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+	font-size: 20px;
+}
+
+h2.page-title{
+	font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+	font-size: 26px;
+	font-weight: bold;
+	margin: 2px;
+}
+
+/* Footer */
+p.footer-text{
+	color: #828282;
+}
+
+/* Post */
+h2.post-title{
+	
+	margin: 0px;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	font-weight: bold;
+	font-size: 25px;
+	font-family: "Trebuchet MS", "Lucida Grande", Verdana, Arial, sans-serif;
+	
+}
+
+h2.post-title a{
+	color: black;
+}
+
+small.post-date{
+
+	color: #7a7a7a;
+	font-size: 11px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	
+}
+
+div.post-text p{
+	font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+	text-align: justify;
+}
+
+p.post-text a{
+	color: black;
+}
+
+p.post-info{
+	text-align: right;
+	color: #626262;
+	font-style: italic;
+}
+
+span.author{
+	font-weight: bold;
+}
+
+a.post-info{
+	color: #626262;
+}
+
+div.navigation{
+	font: 12px 'Lucida Grande';
+}
+
+div.align-left{
+	float:left;
+}
+
+div.align-right{
+	float: right;
+}
+
+/* Sidebar */
+.sidebar-item, .sidebar-item-hover a{
+	color: black;
+}
+
+.sidebar-line{
+	margin-top: 1px;
+	margin-bottom: 1px;
+	width: 90%;
+}
+
+/****************/
+/* Page styling */
+/****************/
+
+/* General */
+#page{
+	width: 900px;
+	padding: 0px;
+	margin: 0 auto;
+	background: url("images/page/main-bg.png") repeat-y;
+}
+
+/* Header */
+#page-header{
+	height: 240px;
+	padding: 0px;
+	margin: 0px;
+	clear: both;
+}
+
+#header-content{
+	position: relative;
+	float: left;
+	background: white url("images/page/border-top.png") repeat-x;
+	padding-top: 15px;
+	text-align: right;
+}
+
+/* Header logo under CC By-ND license: http://flickr.com/photos/whizkeed/ */
+#header-logo{
+	background: white url("images/page/header-logo.jpg") no-repeat;
+	height: 225px;
+	width: 850px;
+}
+
+span.header-left-side, span.header-right-side{
+	background: url("images/page/corner-top.png") no-repeat;
+	display: block;
+	width: 25px;
+	height: 240px;
+}
+
+span.header-left-side{
+	background-position: 0 0;
+	float: left;
+}
+
+span.header-right-side{
+	background-position: 100% 0;
+	float: right;
+}
+
+/* Body */
+#page-body{
+	clear: both;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#body-left-column{
+	width: 600px;
+	float: left;
+	clear: left;
+	text-align: left;
+}
+
+#body-right-column{
+	width: 225px;
+	float: right;
+	clear: right;
+	text-align: left;
+}
+
+/* Footer */
+#page-footer{
+	clear: both;
+	padding-top: 20px;
+}
+
+#footer-content{
+	text-align: center;
+}
+
+/* Posts */
+.post{
+	clear: both;
+}
+
+/************/
+/* Elements */
+/************/
+/* Search box */
+#search-form{
+	padding: 0;
+	margin: 0;
+	right: 7px;
+	bottom: 9px;
+	position: absolute;
+}
+
+#search-box{
+	background: white url("images/search.png") no-repeat left;
+	padding-left: 17px;
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	font-size: 13px;
+	border: 1px solid #8f8e8c;
+}
+
+/* Sidebar boxes */
+.sidebar-box{
+	background-color: #e0e0e0;
+	background-image: url("images/page/box-top.gif");
+	background-repeat: no-repeat;
+	margin-bottom: 10px;
+	padding-top: 5px;
+}
+
+.sidebar-box-bot{
+	background: url("images/page/box-bot.gif") no-repeat;
+	width: 100%;
+	height: 5px;
+	clear: both;
+}
+
+/* Sidebar lists */
+.sidebar-item, .sidebar-item-hover{
+	font-size: 14px;
+	font-weight: bold;
+	font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+	margin: 0px;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.sidebar-item-hover:hover{
+	background-color: #797979;
+}
+
+.sidebar-list li{
+	font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.sidebar-list{
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+.sidebar-list a{
+	color: black;
+}
+
+/* Error/Warning messages */
+.error{
+	background: #ffa0a6 url('images/icons/error.png') no-repeat left;
+	padding-left: 20px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+.warning{
+	background: #fff0c5 url('images/icons/warning.png') no-repeat left;
+	padding-left: 20px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+/* Comments box */
+.comment-box{
+	margin-top: 10px;
+	border: 1px solid #a6a6a6;
+	background-color: #e1e1e1;
+	padding: 10px;
+	width: 100%;
+}
+.comment-box-right{
+	vertical-align: top;
+	padding: 5px;
+
+}
+.comment-box-left{
+	border-right-color: #909090;
+	vertical-align: top;
+	padding: 5px;
+	border-right: 1px dashed;
+	width: 60px;
+
+}
+.comment-form-box{
+	clear: both;
+}

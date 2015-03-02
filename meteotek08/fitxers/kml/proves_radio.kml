@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Folder>
+<name>Proves de ràdio</name>
+<description>Avui dia 28 de Maig de 2008, hem realitzat les primeres proves ràdio a curta distància (un màxim de 4,04km). La base ha estat ubicada a l'IES Bisbal i amb el cotxe d'en Sergi hem anat recorreguent diversos punts estratègics per provar les comunicacions. Les proves han durat una hora i quart aproximadament (13.20 a 14.35). La ràdio ha estat emetent tota l'estona, inclòs quan ens movíem (cada 2s enviava la cadena de text "meteotek08"). La recepció ha estat gairebé continua en tot moment (alguna pèrdua en canviar d'ubicació, ja que probablement faltava reorientar l'antena de la base). Podem concloure doncs, que la prova ha estat satisfactòria.</description>
+
+  <Placemark>
+    <name>Base de recepció.</name>
+    <description>Base de recepció a la terrassa de l'IES La Bisbal. Equip: Antena Yagi de 5 elements, portàtil, equip de ràdio Maxon SD125 i bateria de cotxe com a font d'alimentació.</description>
+    <Point>
+      <coordinates>3.04357872809903,41.95783782268271,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Prova 1: La Bisbal d'Empordà</name>
+    <description>Prova des d'un turó de La Bisbal d'Empordà.</description>
+    <Point>
+      <coordinates>3.047204036575222,41.96225601249879,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Prova 2: Castell d'Empordà</name>
+    <description>Proves des de darrera el club de tennis, ubicat prop de Castell d'Empordà.</description>
+    <Point>
+      <coordinates>3.044107878661876,41.97285012448289,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Prova 3: Ermita de l'Esperança (Cruïlles)</name>
+    <description>Proves des d'un camp ubicat prop de l'Ermita de l'Esperança, a Cruïlles.</description>
+    <Point>
+      <coordinates>3.010667373491374,41.96323611111111,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Prova 4: Monells</name>
+    <description>Proves des de la població de Monells.</description>
+    <Point>
+      <coordinates>3.001354188424534,41.97590777235651,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Prova 5: Corçà</name>
+    <description>Proves des de la població de Corçà.</description>
+    <Point>
+      <coordinates>3.019514396287345,41.98467309828446,0</coordinates>
+    </Point>
+  </Placemark>
+
+</Folder>
+</kml>

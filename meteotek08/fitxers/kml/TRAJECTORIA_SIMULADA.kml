@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Balloon Trajectory (06Z 28 February 2009)</name>
+	<open>1</open>
+	<LookAt>
+		<longitude>-0.0326323893580709</longitude>
+		<latitude>41.6071668145791</latitude>
+		<altitude>0</altitude>
+		<range>55960.1228213265</range>
+		<tilt>50</tilt>
+		<heading>-45.5781922766639</heading>
+	</LookAt>
+	<Style id="place">
+		<IconStyle>
+			<Icon>
+				<href>http://weather.uwyo.edu/icons/purple.gif</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sn_grn-circle">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-circle-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<StyleMap id="msn_target">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_target</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_target</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_target">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/target.png</href>
+			</Icon>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="sn_red-square">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-square.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-square-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sh_target">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/target.png</href>
+			</Icon>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="msn_red-square">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_red-square</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_red-square</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_red-square">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-square.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-square-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin">
+		<LineStyle>
+			<color>ff00ffff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>3f00ffff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_grn-circle">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-circle-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<StyleMap id="msn_grn-circle">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_grn-circle</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_grn-circle</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="track">
+		<LineStyle>
+			<color>fff010c0</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>3fc00880</color>
+		</PolyStyle>
+	</Style>
+	<Placemark>
+		<name>Flight Path</name>
+		<styleUrl>#sn_ylw-pushpin</styleUrl>
+		<LineString>
+			<extrude>1</extrude>
+			<tessellate>1</tessellate>
+			<altitudeMode>absolute</altitudeMode>
+			<coordinates>
+-0.158145,41.49573,250 -0.158872,41.495798,358.0000000000001 -0.161034,41.496335,572.0000000000001 -0.163293,41.497517,793.0000000000001 -0.165038,41.499242,1019 -0.166729,41.503359,1491 -0.166735,41.507783,1988 -0.166175,41.512416,2513 -0.166055,41.517512,3068 -0.167492,41.523466,3655 -0.17117,41.530482,4281 -0.176456,41.538695,4948 -0.182906,41.548306,5664 -0.191559,41.558314,6437.000000000002 -0.203437,41.568526,7279 -0.218883,41.58089,8206 -0.236416,41.600373,9236 -0.261828,41.626872,10406 -0.289284,41.657103,11782 -0.284267,41.681771,13555 -0.226337,41.690297,16071 -0.16943,41.689982,18252 -0.168545,41.689937,18288 -0.126343,41.679422,20304 -0.067521,41.653433,23453 -0.024972,41.62945,25976 0.130407,41.604046,30000 0.149157,41.600979,25976 0.15617,41.597023,23453 0.168617,41.591517,20304 0.179924,41.588695,18288 0.180185,41.588682,18252 0.198597,41.58858,16071 0.22161,41.591972,13555 0.22402,41.603831,11782 0.208961,41.620418,10406 0.19354,41.636492,9236 0.181998,41.649307,8206 0.171129,41.657996,7279 0.1623,41.665576,6437.000000000002 0.155571,41.673343,5664 0.150367,41.681084,4948 0.145969,41.687899,4281 0.142833,41.693866,3655 0.141583,41.699031,3068 0.141689,41.703523,2513 0.142191,41.70766,1988 0.142185,41.711649,1491 0.140643,41.715391,1019 0.139044,41.716966,793.0000000000001 0.136969,41.718048,572.0000000000001 0.134978,41.718541,358.0000000000001 0.134308,41.718604,250 </coordinates>
+		</LineString>
+	</Placemark>
+	<Folder>
+		<name>Points</name>
+		<open>1</open>
+		<Placemark>
+			<name>Llançament [S]</name>
+			<styleUrl>#msn_grn-circle</styleUrl>
+			<Point>
+				<altitudeMode>absolute</altitudeMode>
+				<coordinates>-0.158145,41.49573,249.81</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Explosió [S]</name>
+			<styleUrl>#msn_target</styleUrl>
+			<Point>
+				<altitudeMode>absolute</altitudeMode>
+				<coordinates>0.130407307379756,41.6040460755306,30000</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Aterratge [S]</name>
+			<styleUrl>#msn_red-square</styleUrl>
+			<Point>
+				<altitudeMode>absolute</altitudeMode>
+				<coordinates>0.134307721319367,41.7186036291582,249.81</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

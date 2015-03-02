@@ -1,0 +1,297 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="ca">
+
+
+<!-- Mirrored from teslabs.com/meteotek08/2008/04/13/mes/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 01 Mar 2015 18:33:52 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Més&#8230;! | Meteotek08</title>
+
+<meta name="generator" content="WordPress 2.8.4"/> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="../../../../wp-content/themes/meteotek08/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="Meteotek08 RSS Feed" href="../../../../feed/index.html" />
+<link rel="pingback" href="../../../../xmlrpc.php" />
+
+<link rel="alternate" type="application/rss+xml" title="Meteotek08 &raquo; Més&#8230;!  Fil RSS de comentaris" href="feed/index.html" />
+<script type='text/javascript' src='../../../../wp-includes/js/jquery/jquery9e1e.js?ver=1.3.2'></script>
+<script type='text/javascript' src='../../../../wp-content/plugins/wordpress-flickr-manager/js/jquery.lightbox5e0b.js?ver=2.8.4'></script>
+<script type='text/javascript' src='../../../../wp-content/plugins/wordpress-flickr-manager/js/wfm-lightbox5e0b.php?ver=2.8.4'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../../../xmlrpc0db0.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../../../wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='Meteotek08' href='../../../../index.html' />
+<link rel='start' title='Comença el projecte!' href='../../../02/05/comenca-el-projecte/index.html' />
+<link rel='prev' title='Més progressos' href='../../../03/30/mes-progressos/index.html' />
+<link rel='next' title='Avançant' href='../../../05/23/avancant/index.html' />
+<meta name="generator" content="WordPress 2.8.4" />
+
+<!-- All in One SEO Pack 1.6.5 by Michael Torbert of Semper Fi Web Design[299,398] -->
+<meta name="description" content="Després de dies de treball intens el progrés de la sonda és molt satisfactori. Alguns objectius clau han estat assolits, i altres resten pendents tot i que" />
+<!-- /all in one seo pack -->
+
+<!-- WFM INSERT LIGHTBOX FILES -->
+<link rel="stylesheet" href="../../../../wp-content/plugins/wordpress-flickr-manager/css/lightbox.css" type="text/css" />
+<!-- WFM END INSERT -->
+
+			
+<!-- Protected by WP-SpamFree v2.1.0.7 :: JS BEGIN -->
+<script type="text/javascript" src="../../../../wp-content/plugins/wp-spamfree/js/wpsf-js.js"></script> 
+<!-- Protected by WP-SpamFree v2.1.0.7 :: JS END -->
+
+</head>
+
+<body>
+<div id="page">
+	
+	<!-- PAGE HEADER -->
+	<div id="page-header">
+		<span class="header-left-side"></span>
+		<div id="header-content">
+			<div id="header-logo">
+				<form method="get" id="search-form" action="http://teslabs.com/meteotek08/">
+				<input type="text" value="" name="s" id="search-box" style="width: 118px; height: 16px;"/>
+				</form>
+			</div>
+		</div>
+		<span class="header-right-side"></span>
+	</div>
+	
+	<!-- PAGE BODY -->
+	<div id="page-body">
+	<div id="body-left-column">
+
+	
+		<div class="navigation">
+			<div class="align-left">&laquo; <a href="../../../03/30/mes-progressos/index.html">Més progressos</a></div>
+			<div class="align-right"><a href="../../../05/23/avancant/index.html">Avançant</a> &raquo;</div>
+		</div>
+
+		<div class="post" id="post-13">
+				<h2 class="post-title"><a href="index.html" rel="bookmark" title="Enllaç permanent a Més&#8230;!">Més&#8230;!</a></h2>
+				<div class="post-text">
+					<p>Després de dies de treball intens el progrés de la sonda és molt satisfactori. Alguns objectius clau han estat assolits, i altres resten pendents tot i que esperem solucionar el més aviat possible.</p>
+<p>Pel que fa als components ja disposem de força material amb el què treballar:</p>
+<ul>
+<li>Mòdul GPS Copernicus (+ Antena)</li>
+<li>Microcontroladors nous: Atgmega32 i Atmega8</li>
+<li>Càmera Nikon Coolpix L10</li>
+<li>Reflector de radar tubular</li>
+</ul>
+<p>Altres coses encara resten pendents de decisió, són:</p>
+<ul>
+<li>Mòdul de ràdio (pròximament)</li>
+<li>Alimentació (possiblement piles Energizer L91)</li>
+<li>Paracaigudes</li>
+<li>Globus</li>
+</ul>
+<p>Per altra banda, també cal dir que la cambra de proves que mencionàvem en el post anterior, ja està completament acabada i apunt per ser utilitzada (vegeu les fotos al final)</p>
+<p>Pel que fa al programari, és a dir el codi que farà funcionar tots els components, aquest cap de setmana s&#8217;ha avançat en temes importants. El sensor de pressió SCP1000 ja funciona a la perfecció, junt amb els sensors de temperatura DS18B20. Com veureu al final del post, el circuit de moment envia via port sèrie les dades llegides pels sensors. El GPS ja es troba muntat, i de moment podem llegir-ne purament les dades NMEA, en format ASCII i interpretables fàcilment a simple vista però que pròximament ho farà el microcontrolador per tal de poder ser manipulades segons les nostres necessitats.</p>
+<p>Missatge amb les dades dels sensors:</p>
+<p><em>METEOTEK08 &#8211; Dades actuals:<br />
+Pressio: 101410 Pa<br />
+Temperatura: 25 C<br />
+Temperatura interior: +25.4375<br />
+Temperatura exterior: +25. 3750</em></p>
+<p>El missatge del GPS (sense descodificar, missatges NMEA0183 GGA i VTG) d&#8217;on podem obtenir dades com hora UTC, posició (lat/long), altura, satèl·lits visibles, etc.:</p>
+<p><em>$GPGGA,220032.00,4159.13440,N,00300.83815,E,2,07,1.48,00066,M,050,M,99,0000*6E<br />
+$GPVTG,000.0,T,002.4,M,000.00,N,000.00,K,D*20</em></p>
+<p>Una proposta pels lectors: A veure si sou capaços de determinar exactament des d&#8217;on i quan estava fent aquestes proves amb el GPS utilitzant les dades que acabo de proveïr. Sort <img src='../../../../wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' />  !</p>
+<p>Finalment, us deixo amb unes quantes fotografies que són el millor per il·lustrar el progrés. Recordeu que visitant el nostre <a href="http://www.flickr.com/photos/meteotek08" target="_blank">àlbum de fotografies</a>, podreu trobar la col·lecció completa a més de descripcions i notes.</p>
+<p><a href="http://www.flickr.com/photos/meteotek08/2411737886/" class="tt-flickr"><img src="http://farm3.static.flickr.com/2201/2411737886_65e58cc1fe.jpg" alt="Circuit Actual (13 d'Abril de 2008)" border="0" height="375" width="500" /></a></p>
+<p><a href="http://www.flickr.com/photos/meteotek08/2408175407/" class="tt-flickr"><img src="http://farm4.static.flickr.com/3289/2408175407_e60afb15a7.jpg" alt="Les coses comencen a funcionar!" border="0" height="400" width="500" /></a></p>
+<p><a href="http://www.flickr.com/photos/meteotek08/2411915522/" class="tt-flickr"><img src="http://farm3.static.flickr.com/2241/2411915522_a83d1c631f.jpg" alt="Dades del GPS" border="0" height="442" width="500" /></a></p>
+<p><a href="http://www.flickr.com/photos/meteotek08/2411089259/" class="tt-flickr"><img src="http://farm4.static.flickr.com/3154/2411089259_69a9a50d8c.jpg" alt="DescripciÃ³ dels pins de la cÃ mera Nikon Coolpix L10" border="0" height="375" width="500" /></a></p>
+<p><a href="http://www.flickr.com/photos/meteotek08/2398421371/" class="tt-flickr"><img src="http://farm4.static.flickr.com/3284/2398421371_e20d228bf7.jpg" alt="Caixa totalment acabada" border="0" height="375" width="500" /></a></p>
+<p><a href="http://www.flickr.com/photos/meteotek08/2398418719/" class="tt-flickr"><img src="http://farm4.static.flickr.com/3031/2398418719_0d3a0ca322.jpg" alt="Interior totalment acabat" border="0" height="375" width="500" /></a></p>
+<p><a href="http://www.flickr.com/photos/meteotek08/2401822798/" class="tt-flickr"><img src="http://farm3.static.flickr.com/2196/2401822798_c9cf496f3f.jpg" alt="Nou material!" border="0" height="375" width="500" /></a></p>
+<p><a href="http://www.flickr.com/photos/meteotek08/2400989353/" class="tt-flickr"><img src="http://farm3.static.flickr.com/2345/2400989353_009ce52291.jpg" alt="Reflector de radar tubular" border="0" height="375" width="500" /></a></p>
+		
+				
+				
+								
+				<p class="post-info">
+						Aquesta entrada fou escrita  el diumenge 13 abril 2008 a les 11:44 pm i publicada a <a href="../../../../category/novetats/index.html" title="Mostra tots els apunts a Novetats" rel="category tag">Novetats</a>.						Pots seguir les respostes a aquesta entrada amb el fil <a href='feed/index.html'>RSS 2.0</a>. 
+
+													Pots <a href="#respond">publicar un comentari</a>, o fer un <a href="trackback/index.html" rel="trackback">retroenllaç</a> des del teu propi web.
+										</p>
+
+			</div>
+		</div>
+
+	<hr/>
+
+
+<!-- You can start editing here. -->
+
+
+			<!-- If comments are open, but there are no comments. -->
+
+	 
+
+
+<div class="comment-form-box">
+	<h3>Publicar un comentari</h3>
+	
+		
+	<form action="http://teslabs.com/meteotek08/wp-comments-post.php" method="post" id="commentform">
+	
+		
+	<p><input type="text" name="author" id="author" value="" size="22" tabindex="1" />
+	<label for="author"><small>Nom (necessari)</small></label></p>
+	
+	<p><input type="text" name="email" id="email" value="" size="22" tabindex="2" />
+	<label for="email"><small>Adreça electrònica (no es farà pública) (necessari)</small></label></p>
+	
+	<p><input type="text" name="url" id="url" value="" size="22" tabindex="3" />
+	<label for="url"><small>Lloc web</small></label></p>
+	
+		
+	<!--<p><small><strong>XHTML:</strong> Pots usar aquestes marques: <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </code></small></p>-->
+	
+	<p><textarea style="width: 100%;" name="comment" id="comment" rows="10" tabindex="4"></textarea></p>
+	
+	<p><input name="submit" type="submit" id="submit" tabindex="5" value="Enviar el comentari" />
+	<input type="hidden" name="comment_post_ID" value="13" />
+	</p>
+		<script type='text/javascript'>
+	<!--
+	refJS = escape( document[ 'referrer' ] );
+	document.write("<input type='hidden' name='refJS' value='"+refJS+"'>");
+	// -->
+	</script>
+	<noscript><p><strong>Currently you have JavaScript disabled. In order to post comments, please make sure JavaScript and Cookies are enabled, and reload the page.</strong> <a href="http://www.google.com/support/bin/answer.py?answer=23852" rel="nofollow external" >Click here for instructions</a> on how to enable JavaScript in your browser.</p></noscript>
+	
+	</form>
+	
+		
+	</div>
+	
+</div>
+
+<div id="body-right-column">
+	<div id="sidebar">
+		
+		<!-- MENU -->
+		<div class="sidebar-box" id="menu">
+			<div class="sidebar-item-hover"><img alt="" src="../../../../wp-content/themes/meteotek08/images/icons/inici.png" style="margin-right: 5px;"/><a href="../../../../index.html">Inici</a></div>
+			<div class="sidebar-item-hover"><img alt="" src="../../../../wp-content/themes/meteotek08/images/icons/fotos.png" style="margin-right: 5px;"/><a href="http://flickr.com/photos/meteotek08">Fotografies</a></div>
+			<div class="sidebar-item-hover"><img alt="" src="../../../../wp-content/themes/meteotek08/images/icons/docs.png" style="margin-right: 5px;"/><a href="../../../../documents/index.html">Documents</a></div>
+			<div class="sidebar-item-hover"><img alt="" src="../../../../wp-content/themes/meteotek08/images/icons/links.png" style="margin-right: 5px;"/><a href="../../../../enllacos/index.html">Enlla&ccedil;os</a></div>
+			<div class="sidebar-item-hover"><img alt="" src="../../../../wp-content/themes/meteotek08/images/icons/membres.png" style="margin-right: 5px;"/><a href="../../../../membres/index.html">Membres</a></div>
+			
+		<div class="sidebar-box-bot"></div>
+		</div>
+		
+		<!-- ARCHIVES -->
+		<div class="sidebar-box" id="arxius">
+			<div class="sidebar-item"><img alt="" src="../../../../wp-content/themes/meteotek08/images/icons/arxius.png" style="margin-right: 5px;"/>Arxius</div>
+			<hr class="sidebar-line"/>
+			<ul class="sidebar-list">
+					<li><a href='../../../../2009/06/index.html' title='juny 2009'>juny 2009</a></li>
+	<li><a href='../../../../2009/03/index.html' title='març 2009'>març 2009</a></li>
+	<li><a href='../../../../2009/02/index.html' title='febrer 2009'>febrer 2009</a></li>
+	<li><a href='../../../12/index.html' title='desembre 2008'>desembre 2008</a></li>
+	<li><a href='../../../07/index.html' title='juliol 2008'>juliol 2008</a></li>
+	<li><a href='../../../06/index.html' title='juny 2008'>juny 2008</a></li>
+	<li><a href='../../../05/index.html' title='maig 2008'>maig 2008</a></li>
+	<li><a href='../../index.html' title='abril 2008'>abril 2008</a></li>
+	<li><a href='../../../03/index.html' title='març 2008'>març 2008</a></li>
+	<li><a href='../../../02/index.html' title='febrer 2008'>febrer 2008</a></li>
+			</ul>
+		<div class="sidebar-box-bot"></div>
+		</div>
+		
+		<!-- PHOTOS -->
+		<div class="sidebar-box" id="fotografies">
+			<div class="sidebar-item"><img alt="" src="../../../../wp-content/themes/meteotek08/images/icons/fotos.png" style="margin-right: 5px;"/>Resum fotogr&agrave;fic</div>
+			<hr class="sidebar-line"/>
+			<!-- Start of Flickr Badge -->
+			
+			<table id="flickr_badge_uber_wrapper" align="center" cellpadding="0" cellspacing="10" border="0"><tr><td>
+			
+			<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=3&amp;display=latest&amp;size=t&amp;layout=v&amp;source=user&amp;user=23468143%40N08"></script>
+	
+			</td></tr></table>
+			<!-- End of Flickr Badge -->
+			
+						
+		<div class="sidebar-box-bot"></div>
+		</div>
+		
+		
+		<!-- RECOMENATS -->
+		<div class="sidebar-box" id="recomanats">
+			<div class="sidebar-item"><img alt="" src="../../../../wp-content/themes/meteotek08/images/icons/recomanats.png" style="margin-right: 5px;"/>Recomanats</div>
+			<hr class="sidebar-line"/>
+			
+			<table id="flickr_badge_uber_wrapper" align="center" cellpadding="0" cellspacing="10" border="0"><tr><td>
+				
+			<img src="http://www.teslabs.com/meteotek08/fitxers/varis/logo_pce.jpg" alt="Utilidades de medici&oacute;: Bar&oacute;metro"/>
+			<br><br>Aparatos de medida: <a href="http://www.pce-iberica.es/medidor-detalles-tecnicos/instrumento-de-presion/barometro-mano-db2.htm">Barómetro</a>
+			
+			</td></tr></table>
+						
+		<div class="sidebar-box-bot"></div>
+		</div>
+		
+		
+		<!-- LOGIN -->
+		<p style="text-align: right;">
+			<a href="../../../../wp-login0ddc.html?action=register">Registrar-se</a><br/>
+			<a href="../../../../wp-login.html">Identificar-se</a>		</p>
+	</div>
+</div></div>
+	<div id="page-footer">
+		<div id="footer-content">
+			<hr align="center" style="width: 850px;"/>
+			
+			<a href="http://gplv3.fsf.org/"><img src="../../../../wp-content/themes/meteotek08/images/banners/gnugplv3.png" alt="El nostre programari es troba sota llic&egrave;ncia GPLv3"/></a>
+			&nbsp;&nbsp;
+			<a href="http://www.gnu.org/licenses/fdl.html"><img src="../../../../wp-content/themes/meteotek08/images/banners/gnufdl.png" alt="El contingut d'aquesta p&agrave;gina es troba sota llic&egrave;ncia GFDL"/></a>
+			&nbsp;&nbsp;
+			<a href="http://www.getfirefox.com/"><img alt="Firefox 2" src="../../../../wp-content/themes/meteotek08/images/banners/firefox.gif"/></a>
+			
+			<p class="footer-text">
+			Projecte realitzat pels membres del cr&egrave;dit de taller del 2n de batxillerat tecnol&ograve;gic de l'IES Bisbal.<br/>
+			<a href="http://ieslabisbal.xtec.cat/"><img src="../../../../wp-content/themes/meteotek08/images/banners/iesbisbal.jpg" alt="P&agrave;gina web de l'IES Bisbal"/></a>
+			 <br/>Curs 2007-08<br/>
+			</p>
+			<p class="footer-text">
+			Si ets v&iacute;ctima del navegador Internet Explorer, si us plau, canvia't a <a href="http://getfirefox.com/">Mozilla Firefox</a>.
+			</p>
+			
+			<p>
+				<a href="http://validator.w3.org/check?uri=referer">
+					<img src="../../../../wp-content/themes/meteotek08/images/banners/xhtml.jpg" alt="Valid XHTML 1.0 Transitional"/>
+				</a>
+        		&nbsp;&nbsp;&nbsp;
+			 	<a href="http://jigsaw.w3.org/css-validator/">
+			  		<img src="../../../../wp-content/themes/meteotek08/images/banners/css.jpg" alt="Valid CSS!" />
+			 	</a>
+			</p>
+			<div style="background-image: url('../../../../wp-content/themes/meteotek08/images/page/bottom-bg.png'); height: 25px; width: 100%"></div>
+		</div>
+	</div>
+
+</div>
+
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-3555511-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; 
+
+ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+</body>
+
+<!-- Mirrored from teslabs.com/meteotek08/2008/04/13/mes/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 01 Mar 2015 18:33:52 GMT -->
+</html>

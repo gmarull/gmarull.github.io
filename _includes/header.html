@@ -1,0 +1,28 @@
+<header class="site-header">
+  <div class="container">
+    <canvas class="site-logo" width=56 height=56></canvas>
+
+    <img class="site-logo-print" src="{{ '/assets/images/logo.png' | prepend: site.baseurl }}" width=56 height=56>
+    
+    <h1 class="site-title">{{ site.title }}</h1>
+
+    <input type="checkbox" id="site-nav-trigger" />
+    <label for="site-nav-trigger">&#9776;</label>
+
+    <nav class="site-nav">
+      <ul>
+        {% assign pageurl = page.url | split: '/' %}
+
+        {% for link in site.navigation  %}
+
+          {% assign linkurl = link.url | split: '/' %}
+
+          <li {% if linkurl[1] == pageurl[1] %}class="active"{% endif %}>
+            <a href="{{ link.url }}">{{ link.text }}</a>
+          </li>
+
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>

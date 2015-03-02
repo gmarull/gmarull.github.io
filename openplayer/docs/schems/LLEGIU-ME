@@ -1,0 +1,4 @@
+- Obriu els fitxers "openplayer.sch" i "openplayer.brd" amb l'Eagle per visualitzar/editar els esquemes originals.
+- Processeu els fitxers "gerber_job.cam" and "excellon_drill_job.cam" de la carpeta "Scripts" amb l'EAGLE CAM Processor per generar els fitxers Gerber.
+- Utilitzeu els fitxers "merge.cfg" i "merge.def" juntament amb el programa gerbmerge per crear els fitxers Gerber panelitzats
+- Utilitzeu el programa Gerbv per visualitzar els fitxers Gerber.
