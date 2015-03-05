@@ -22,7 +22,7 @@ wondering what is the figure spinning on top, read
 * [Github](//github.com/gerardmp)
 
 {% assign total_posts = site.posts | size %}
-{% if total_posts > 1 %}
+{% if total_posts >= 1 %}
 ## Latest articles
 <ul>
   {% for post in site.posts limit: 5 %}
