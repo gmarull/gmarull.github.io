@@ -261,13 +261,39 @@ permalink: /cv/
   <div class="cv-entry">
     <h3 class="cv-entry-title">Algorithms, maths and physics</h3>
     <p>
-      Sensor <strong>calibration algorithms</strong> (accelerometer and compass),
-      <strong>ocean surface modelling</strong>, <strong>SAR</strong>
-      (<em>Synthetic Aperture Radar</em>) systems, <strong>signal
-        processing</strong>, <strong>electromagnetic modelling</strong>.
+      Sensor <strong>calibration algorithms</strong> (accelerometer and compass
+      using sphere-fitting methods), <strong>ocean surface modelling</strong>,
+      <strong>SAR</strong> (<em>Synthetic Aperture Radar</em>) systems,
+      <strong>signal processing</strong>, <strong>electromagnetic
+      modelling</strong>.
     </p>
   </div>
 
+  <div class="grid">
+    <div class="grid grid-col-100">
+      <div class="grid-col-40">
+        <div class="content">
+          <video controls width="100%">
+            <source src="{{ '/content/cv/imu_acc_mag.webm' | prepend: site.baseurl }}" type="video/webm">
+            <source src="{{ '/content/cv/imu_acc_mag.mp4' | prepend: site.baseurl }}" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="grid-col-60">
+        <div class="content">
+          <img src="{{ '/content/cv/magcal.jpg' | prepend: site.baseurl }}" alt="Magnetometer calibration">
+        </div>
+      </div>
+    </div>
+    <div class="grid grid-col-100">
+      <div class="content">
+        <video width="100%" controls loop>
+          <source src="{{ '/content/cv/ocean_nrcs.webm' | prepend: site.baseurl }}" type="video/webm">
+          <source src="{{ '/content/cv/ocean_nrcs.mp4' | prepend: site.baseurl }}" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="cv-section">
@@ -411,7 +437,7 @@ permalink: /cv/
   <div class="cv-entry">
     <h3 class="cv-entry-title">Languages</h3>
     <ul>
-      <li>Catalan, Spanish: Mother tongues</li>
+      <li>Catalan, Spanish: Mother tongues.</li>
       <li>English: Professional working proficiency.</li>
     </ul>
   </div>

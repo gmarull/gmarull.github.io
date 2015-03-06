@@ -209,6 +209,19 @@ code {
   font-size: 0.842105em;
 }
 
+kbd {
+  display: inline-block;
+  margin: 0 0.1em;
+  padding: 0 0.5em;
+  line-height: 1.2em;
+  white-space: nowrap;
+  text-shadow: 0 1px 0 #fff;
+  color: #333;
+  border: #ccc 1px solid;
+  border-radius: 3px;
+  box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #fff inset;
+}
+
 /* Images and figures */
 img {
   max-width: 100%;
