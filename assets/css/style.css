@@ -233,6 +233,14 @@ figcaption {
   text-align: center;
 }
 
+@media print {
+  img, iframe {
+      page-break-before: auto;
+      page-break-after: auto;
+      page-break-inside: avoid;
+  }
+}
+
 /* Tables */
 table {
     margin: 1.75em 0;
@@ -701,6 +709,11 @@ label[for=site-nav-trigger] {
 }
 
 /* Section entries */
+.cv-bio {
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+}
+
 .cv-entry {
   margin-bottom: 1.5em;
 }
