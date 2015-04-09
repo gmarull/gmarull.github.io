@@ -19,7 +19,7 @@ wondering what is the figure spinning on top, read
 
 * [Facebook](//facebook.com/gerard.marull)
 * [LinkedIn](//uk.linkedin.com/in/gerardmarull)
-* [Github](//github.com/gerardmp)
+* [Github](//github.com/teslabs)
 
 {% assign total_posts = site.posts | size %}
 {% if total_posts >= 1 %}
