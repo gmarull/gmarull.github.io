@@ -17,7 +17,7 @@ wondering what is the figure spinning on top, read
 
 ### Find me on...
 
-* [Facebook](//facebook.com/gerard.marull)
+* [Facebook](//facebook.com/profile.php?id=1561380936)
 * [LinkedIn](//uk.linkedin.com/in/gerardmarull)
 * [Github](//github.com/teslabs)
 
