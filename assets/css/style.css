@@ -220,6 +220,8 @@ kbd {
   border: #ccc 1px solid;
   border-radius: 3px;
   box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #fff inset;
+  /* Fix for Chrome print */
+  -webkit-filter: opacity(1);
 }
 
 /* Images and figures */
@@ -389,6 +391,11 @@ img.pull-left {
     max-width: 125% !important;
     margin-left: -12.5%;
   }
+}
+
+/* Full width */
+.full-width {
+  width: 100%;
 }
 
 /* Web container */
