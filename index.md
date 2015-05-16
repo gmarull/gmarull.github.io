@@ -5,14 +5,14 @@ permalink: /
 
 # Welcome!
 
-![Author]({{ site.url }}/content/home/author.jpg){: .pull-right width="30%"}
+![Author]({{ site.url }}/content/home/author.jpg){: .pull-right style="width: 30%"}
 
 My name is Gerard Marull-Paretas and I am a
 [Catalan](http://en.wikipedia.org/wiki/Catalonia) [Telecommunications
 Engineer](http://en.wikipedia.org/wiki/Telecommunications_engineering)
 currently working around London, UK. This site serves as a
-place to occasionally write some articles as well as to display my [CV](/cv/). If you are
-wondering what is the figure spinning on top, read
+place to occasionally write some articles as well as to display my [CV](/cv/).
+If you are wondering what is the figure spinning on top, read
 [this](http://en.wikipedia.org/wiki/Lissajous_curve).
 
 ### Find me on...
