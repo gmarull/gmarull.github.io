@@ -138,7 +138,7 @@ html {
 body {
   margin: 0 auto;
   font: 1em/1.4 "source-serif-pro", serif;
-  color: rgba(0, 0, 0, 0.65);
+  color: rgba(0, 0, 0, 0.75);
   word-wrap: break-word;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -146,7 +146,7 @@ body {
 }
 
 a {
-  color: #0066cc;
+  color: #3884C3;
   text-decoration: none;
   border-bottom: rgba(0, 0, 0, 0.1) 1px solid;
 }
@@ -161,7 +161,6 @@ h4, h5, h6 {
 
 h1 {
   font-size: 1.842105em;
-  color: #57ad68;
 }
 
 h2 {
@@ -594,12 +593,11 @@ label[for=site-nav-trigger] {
 
 .post-title {
   margin-bottom: 0.1em;
-  color: #57ad68;
 }
 
 .post-title a {
   border-bottom: none;
-  color: #57ad68;
+  color: rgba(0, 0, 0, 0.75); 
 }
 
 .post-date {
@@ -747,10 +745,6 @@ label[for=site-nav-trigger] {
 
 .cv-header span {
   margin-left: 0.3em;
-}
-
-.cv-name {
-  color: #57ad68;
 }
 
 .cv-print {

@@ -1,21 +1,23 @@
-# Setup
-
+# site and author details
 title: 'TESLABS'
 description: > 
-    'TESLABS is the personal web page of Gerard Marull-Paretas, where you will
-    find his profile and some technical articles'
+    TESLABS is the personal web page of Gerard Marull-Paretas, where you will
+    find his profile and some technical articles
 
 author:
     name: 'Gerard Marull-Paretas'
     email: 'gerardmarull@gmail.com'
     url: 'http://www.teslabs.com'
 
+# setup
+gems: [jekyll-paginate]
+
 permalink: '/articles/:title'
 
 paginate: 5
 paginate_path: 'articles/page/:num'
 
-# Pages
+# pages
 navigation:
 - text: Home
   url: /
