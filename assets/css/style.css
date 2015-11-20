@@ -279,6 +279,9 @@ hr {
   border-top: rgba(0, 0, 0, 0.05) 1px solid;
 }
 
+iframe {
+  border: none;
+}
 
 /**
  * 2. Grid
@@ -597,7 +600,7 @@ label[for=site-nav-trigger] {
 
 .post-title a {
   border-bottom: none;
-  color: rgba(0, 0, 0, 0.75); 
+  color: rgba(0, 0, 0, 0.75);
 }
 
 .post-date {
@@ -789,6 +792,7 @@ label[for=site-nav-trigger] {
 
 /* Syntax */
 .highlight {
+  margin: 0;
   border-radius: 4px;
 }
 
