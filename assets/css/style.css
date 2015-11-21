@@ -28,52 +28,6 @@
  * 0. Fonts
  */
 
-/* Computer Modern Typewriter
- * License: OFL */
-@font-face {
-	font-family: 'Computer Modern Typewriter';
-	src: url('../fonts/cmt/cmuntt.eot');
-	src: url('../fonts/cmt/cmuntt.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/cmt/cmuntt.woff') format('woff'),
-       url('../fonts/cmt/cmuntt.ttf') format('truetype'),
-       url('../fonts/cmt/cmuntt.svg#cmuntt') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Computer Modern Typewriter';
-	src: url('../fonts/cmt/cmuntb.eot');
-	src: url('../fonts/cmt/cmuntb.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/cmt/cmuntb.woff') format('woff'),
-       url('../fonts/cmt/cmuntb.ttf') format('truetype'),
-       url('../fonts/cmt/cmuntb.svg#cmuntb') format('svg');
-	font-weight: bold;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Computer Modern Typewriter';
-	src: url('../fonts/cmt/cmunit.eot');
-	src: url('../fonts/cmt/cmunit.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/cmt/cmunit.woff') format('woff'),
-       url('../fonts/cmt/cmunit.ttf') format('truetype'),
-       url('../fonts/cmt/cmunit.svg#cmunit') format('svg');
-	font-weight: normal;
-	font-style: italic;
-}
-
-@font-face {
-	font-family: 'Computer Modern Typewriter';
-	src: url('../fonts/cmt/cmuntx.eot');
-	src: url('../fonts/cmt/cmuntx.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/cmt/cmuntx.woff') format('woff'),
-       url('../fonts/cmt/cmuntx.ttf') format('truetype'),
-       url('../fonts/cmt/cmuntx.svg#cmuntx') format('svg');
-	font-weight: bold;
-	font-style: italic;
-}
-
 /* Icon font (based on FontAwesome) */
 @font-face {
   font-family: 'icons';
@@ -196,16 +150,14 @@ dl dt {
 
 /* Code and related */
 code, kbd, pre, samp {
-  font-family: "Computer Modern Typewriter", monospace;
+  font-family: "Inconsolata", monospace;
   word-wrap: normal;
 }
 
 pre {
   padding: 0.3em 0.5em;
-}
-
-code {
   font-size: 0.842105em;
+  line-height: 1.2;
 }
 
 kbd {
@@ -798,7 +750,7 @@ label[for=site-nav-trigger] {
 
 /* Gist (GitHub) */
 .gist .gist-file {
-  font-family: "Computer Modern Typewriter", monospace !important;
+  font-family: "Inconsolata", monospace !important;
 }
 
 .gist .markdown-body {
