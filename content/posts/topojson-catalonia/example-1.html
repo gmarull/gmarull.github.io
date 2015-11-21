@@ -18,21 +18,21 @@
 var width  = 500,
     height = 500;
 
-/* No need to project! */
+// no need to project
 var path = d3.geo.path()
-      .projection(null);
+    .projection(null);
 
 var svg = d3.select("body").append("svg")
-  .attr("width", width)
-  .attr("height", height);
+    .attr("width", width)
+    .attr("height", height);
 
 d3.json("cat-comarques.json", function(error, cat) {
   if (error) throw error;
 
   svg.append("path")
-    .datum(topojson.feature(cat, cat.objects.comarques))
-    .attr("d", path)
-    .attr("class", "land")
+      .datum(topojson.feature(cat, cat.objects.comarques))
+      .attr("d", path)
+      .attr("class", "land")
 });
 
 </script>
