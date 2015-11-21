@@ -91,7 +91,7 @@ d3.json("{{ site.url }}/content/posts/topojson-catalonia/cat-comarques.json", fu
 </script>
 
 <figure>
-  <div id="map-example"></div>
+  <div id="map-example" class="text-center"></div>
   <figcaption>
     Example: hover the mouse on any county to know its area!
   </figcaption>
@@ -265,7 +265,7 @@ quantization parameters is to try and see how map looks. Three illustrative
 examples are shown below, exaggerating the effects of simplification and
 quantization in the second and third maps, respectively.
 
-<div class="grid extra-width">
+<div class="grid">
     <div class="grid-col-33" id="map-simpl-1"></div>
     <div class="grid-col-33" id="map-simpl-2"></div>
     <div class="grid-col-33" id="map-quant"></div>
@@ -405,21 +405,21 @@ following code:
 var width  = 500,
     height = 500;
 
-/* No need to project! */
+// no need to project!
 var path = d3.geo.path()
-      .projection(null);
+    .projection(null);
 
 var svg = d3.select("body").append("svg")
-  .attr("width", width)
-  .attr("height", height);
+    .attr("width", width)
+    .attr("height", height);
 
 d3.json("cat-comarques.json", function(error, cat) {
   if (error) throw error;
 
   svg.append("path")
-    .datum(topojson.feature(cat, cat.objects.comarques))
-    .attr("d", path)
-    .attr("class", "land")
+      .datum(topojson.feature(cat, cat.objects.comarques))
+      .attr("d", path)
+      .attr("class", "land")
 });
 
 </script>
