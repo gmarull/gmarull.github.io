@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8>
+  <title>Real non-calibrated and calibrated samples</title>
+  <style>
+      body { margin: 0; background-color: #fff;}
+  </style>
+  <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script src="//d3js.org/queue.v1.min.js"></script>
+</head>
+<body>
+<script src="js/three.min.js"></script>
+<script src="js/OrbitControls.js"></script>
+
+<script>
+var scene, camera, renderer, controls;
+
+// magnetic field (Irvine, CA, Dec '15)
+var F = 46.85,
+    I = 58.56951 * Math.PI / 180.;
+    D = 12.00803 * Math.PI / 180.;
+
+// sizes
+var width  = window.innerWidth,
+    height = window.innerHeight,
+    aspectRatio = width / height,
+    viewSize = 1.2 * 2 * F;
+
+// magnetometer data
+var data_ncal, data_cal;
+
+function initScene() {
+
+    scene = new THREE.Scene();
+
+    camera = new THREE.OrthographicCamera(
+        -aspectRatio * viewSize / 2, aspectRatio * viewSize / 2,
+        viewSize / 2, -viewSize / 2, 1, 1000 );
+    
+    camera.position.set( -2 * F , 2 * F, -2 * F );
+
+    renderer = new THREE.WebGLRenderer();
+    renderer.setSize( width, height );
+    renderer.setClearColor( 0xffffff );
+
+    document.body.appendChild( renderer.domElement );
+
+    controls = new THREE.OrbitControls( camera, renderer.domElement );
+
+}
+
+function initGeometry() {
+
+    // point sprite
+    sprite = THREE.ImageUtils.loadTexture( 'textures/ball.png' );
+
+    // reference sphere
+    geometry = new THREE.SphereGeometry( F, 16, 16 );
+    material = new THREE.MeshBasicMaterial( {
+      color: 0xd3d3d3,
+      wireframe: true } );
+    mesh = new THREE.Mesh( geometry, material );
+    scene.add( mesh );
+    
+    // non-calibrated points
+    geometry = new THREE.Geometry();
+
+    for ( i = 0; i < data_ncal.length; i++ ) {
+
+        vertex = new THREE.Vector3(
+             data_ncal[i].x,
+             data_ncal[i].z,
+            -data_ncal[i].y );
+
+        geometry.vertices.push( vertex );
+
+    }
+
+    material = new THREE.PointsMaterial( {
+      size: 10,
+      sizeAttenuation: false,
+      map: sprite,
+      alphaTest: 0.5,
+      transparent: true } );
+    material.color.setRGB(1, 0, 0);
+
+    points = new THREE.Points( geometry, material );
+    scene.add( points );
+
+    // calibrated points
+    geometry = new THREE.Geometry();
+
+    for ( i = 0; i < data_cal.length; i++ ) {
+
+        vertex = new THREE.Vector3(
+             data_cal[i].x,
+             data_cal[i].z,
+            -data_cal[i].y );
+
+        geometry.vertices.push( vertex );
+
+    }
+
+    material = new THREE.PointsMaterial( {
+        size: 10,
+        sizeAttenuation: false,
+        map: sprite,
+        alphaTest: 0.5,
+        transparent: true } );
+    material.color.setRGB(0, 0, 1);
+
+    points = new THREE.Points( geometry, material );
+    scene.add( points );
+
+}
+
+function init() {
+
+    initScene();
+    initGeometry();
+
+    window.addEventListener( 'resize', onResize, false );
+
+    animate();
+
+}
+
+function onResize() {
+
+    width = window.innerWidth;
+    height = window.innerHeight;
+    aspectRatio = width / height;
+
+    renderer.setSize( width, height );
+
+    camera.left = -aspectRatio * viewSize / 2;
+    camera.right = aspectRatio * viewSize / 2;
+    camera.updateProjectionMatrix();
+
+}
+
+function animate() {
+
+    requestAnimationFrame( animate );
+    controls.update();
+    renderer.render( scene, camera );
+
+}
+
+queue()
+    .defer(d3.csv, 'data/ncal.csv')
+    .defer(d3.csv, 'data/cal.csv')
+    .await(function (error, ncal, cal) {
+        data_ncal = ncal;
+        data_cal = cal;
+        init();
+    });
+</script>
+</body>
+</html>

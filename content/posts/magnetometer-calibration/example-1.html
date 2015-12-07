@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8>
+  <title>Real non-calibrated and calibrated samples</title>
+  <style>
+      body { margin: 0; background-color: #fff;}
+  </style>
+</head>
+<body>
+<script src="js/three.min.js"></script>
+<script src="js/OrbitControls.js"></script>
+
+<script>
+var scene, camera, renderer, controls;
+
+// magnetic field (Irvine, CA, Dec '15)
+var F = 46.85,
+    I = 58.56951 * Math.PI / 180.;
+    D = 12.00803 * Math.PI / 180.;
+
+// sizes
+var width  = window.innerWidth,
+    height = window.innerHeight,
+    aspectRatio = width / height,
+    viewSize = 1.2 * 2 * F;
+
+function initScene() {
+
+    scene = new THREE.Scene();
+
+    camera = new THREE.OrthographicCamera(
+        -aspectRatio * viewSize / 2, aspectRatio * viewSize / 2,
+        viewSize / 2, -viewSize / 2, 1, 1000 );
+   
+    camera.position.set( -2 * F , 2 * F, -2 * F );
+
+    renderer = new THREE.WebGLRenderer();
+    renderer.setSize( width, height );
+    renderer.setClearColor( 0xffffff );
+
+    document.body.appendChild( renderer.domElement );
+
+    controls = new THREE.OrbitControls( camera, renderer.domElement );
+
+}
+
+function initGeometry() {
+
+    // point sprite
+    sprite = THREE.ImageUtils.loadTexture( 'textures/ball.png' );
+
+    // reference sphere
+    geometry = new THREE.SphereGeometry( F, 18, 18 );
+    material = new THREE.MeshBasicMaterial( {
+      color: 0xd3d3d3,
+      wireframe: true } );
+    mesh = new THREE.Mesh( geometry, material );
+    scene.add( mesh );
+
+    // reference axes
+    x = new THREE.ArrowHelper(
+        new THREE.Vector3( 1, 0, 0 ),
+        new THREE.Vector3( 0, 0, 0 ),
+        1.5 * F,
+        0xff0000);
+    y = new THREE.ArrowHelper(
+        new THREE.Vector3( 0, 0, 1 ),
+        new THREE.Vector3( 0, 0, 0 ),
+        1.5 * F,
+        0x00ff00);
+    z = new THREE.ArrowHelper(
+        new THREE.Vector3( 0, -1, 0 ),
+        new THREE.Vector3( 0, 0, 0 ),
+        1.5 * F,
+        0x0000ff);
+
+    scene.add(x);
+    scene.add(y);
+    scene.add(z);
+
+    // magnetic field
+    arrow = new THREE.ArrowHelper(
+        new THREE.Vector3(  Math.cos(I) * Math.cos(D),
+                           -Math.sin(I),
+                            Math.cos(I) * Math.sin(D) ),
+        new THREE.Vector3( 0, 0, 0 ),
+        F,
+        0xcccc00);
+    scene.add(arrow);
+
+    // sample points
+    geometry = new THREE.Geometry();
+
+    for ( i = 0; i < 500; i++ ) {
+
+        u = Math.random() * 2 * Math.PI;
+        v = Math.random() * 2 * Math.PI;
+
+        vertex = new THREE.Vector3(
+             F * Math.cos(u) * Math.cos(v),
+            -F * Math.sin(v),
+             F * Math.sin(u) * Math.cos(v) );
+
+        geometry.vertices.push( vertex );
+
+    }
+
+    material = new THREE.PointsMaterial( {
+        size: 10,
+        sizeAttenuation: false,
+        map: sprite,
+        alphaTest: 0.5,
+        transparent: true } );
+    material.color.setRGB(0, 0, 1);
+
+    points = new THREE.Points( geometry, material );
+    scene.add( points );
+
+}
+
+function init() {
+
+    initScene();
+    initGeometry();
+
+    window.addEventListener( 'resize', onResize, false );
+
+    animate();
+
+}
+
+function onResize() {
+
+    width = window.innerWidth;
+    height = window.innerHeight;
+    aspectRatio = width / height;
+
+    renderer.setSize( width, height );
+
+    camera.left = -aspectRatio * viewSize / 2;
+    camera.right = aspectRatio * viewSize / 2;
+    camera.updateProjectionMatrix();
+
+}
+
+function animate() {
+
+    requestAnimationFrame( animate );
+    controls.update();
+    renderer.render( scene, camera );
+
+}
+
+init();
+</script>
+</body>
+</html>
