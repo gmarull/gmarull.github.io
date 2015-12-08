@@ -10,10 +10,10 @@ permalink: /
 My name is Gerard Marull-Paretas and I am a
 [Catalan](http://en.wikipedia.org/wiki/Catalonia) [Telecommunications
 Engineer](http://en.wikipedia.org/wiki/Telecommunications_engineering) currently
-doing a PhD in the field of Electrical Engineering at the [University of
-California, Irvine](http://www.eng.uci.edu). This site serves as a place to
-occasionally write some articles as well as to display my [CV](/cv/).  If you
-are wondering what is the figure spinning on top, read
+in the Electrical Engineering MS/PhD program at the [University of California,
+Irvine](http://www.eng.uci.edu). This site serves as a place to occasionally
+write some articles as well as to display my [CV](/cv/).  If you are wondering
+what is the figure spinning on top, read
 [this](http://en.wikipedia.org/wiki/Lissajous_curve).
 
 ### Find me on...
