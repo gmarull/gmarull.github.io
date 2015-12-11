@@ -21,6 +21,7 @@ what is the figure spinning on top, read
 * [Facebook](//facebook.com/gmarullp)
 * [LinkedIn](//uk.linkedin.com/in/gmarullp)
 * [Github](//github.com/teslabs)
+* [bl.ocks.org](//bl.ocks.org/teslabs)
 
 {% assign total_posts = site.posts | size %}
 {% if total_posts >= 1 %}
