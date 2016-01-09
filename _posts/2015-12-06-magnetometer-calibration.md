@@ -554,7 +554,7 @@ class Magnetometer(object):
             Parameters
             ----------
             s : array_like
-              The samples (N,M) N=number of samples, M=3 (x,y,z).
+              The samples (M,N) where M=3 (x,y,z) and N=number of samples.
 
             Returns
             -------
