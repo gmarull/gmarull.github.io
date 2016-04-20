@@ -12,7 +12,7 @@ author:
 # setup
 gems: [jekyll-paginate]
 
-permalink: '/articles/:title'
+permalink: '/articles/:title/'
 
 paginate: 5
 paginate_path: 'articles/page/:num'
