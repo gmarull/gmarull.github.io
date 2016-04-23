@@ -95,7 +95,8 @@ $$\mathit{S}$$ is given by:
 $$
 \begin{align}
 \mathit{S} :~ & ax^2 + by^2 + cz^2 + \\
-              & 2fyz + 2gxz + 2hxy + 2px + 2qy + 2rz + d = 0.
+              & 2fyz + 2gxz + 2hxy + \\
+	      & 2px + 2qy + 2rz + d = 0.
 \end{align}
 \label{eq_quad_gen}
 \tag{2}
@@ -274,7 +275,7 @@ $$
 </div>
 <div class="grid-col-33">
   <figure class="text-center">
-    <img src="{{ '/content/posts/magnetometer-calibration/inst_errors.png' | prepend: site.baseurl }}" alt="Magnetometer inst. errors">
+    <img src="{{ '/content/posts/magnetometer-calibration/inst_errors.svg' | prepend: site.baseurl }}" alt="Magnetometer inst. errors">
     <figcaption>Schematic representation of each instrumentation error (<span style="color: red;">-</span>)</figcaption>
   </figure>
 </div>
@@ -322,7 +323,7 @@ interference.
 </div>
 <div class="grid-col-33">
   <figure class="text-center">
-    <img src="{{ '/content/posts/magnetometer-calibration/mag_intf.png' | prepend: site.baseurl }}" alt="Magnetic interferences">
+    <img src="{{ '/content/posts/magnetometer-calibration/mag_intf.svg' | prepend: site.baseurl }}" alt="Magnetic interferences">
     <figcaption>Schematic representation of each magnetic interference (<span style="color: red;">-</span>)</figcaption>
   </figure>
 </div>
@@ -393,10 +394,12 @@ $$
 which combined with $$\eqref{eq_h_const}$$ leads to:
 
 $$
-   \mathbf{h}_m^T \mathbf{A}^{-T} \mathbf{A}^{-1} \mathbf{h}_m +
--2 \mathbf{h}_m^T \mathbf{A}^{-T} \mathbf{A}^{-1} \mathbf{b}   +
-   \mathbf{b}^T   \mathbf{A}^{-T} \mathbf{A}^{-1} \mathbf{b}   -
-   \mathcal{F}^2 = 0.
+\begin{align}
+   & \mathbf{h}_m^T \mathbf{A}^{-T} \mathbf{A}^{-1} \mathbf{h}_m - \\
+   & 2 \mathbf{h}_m^T \mathbf{A}^{-T} \mathbf{A}^{-1} \mathbf{b} + \\
+   & \mathbf{b}^T \mathbf{A}^{-T} \mathbf{A}^{-1} \mathbf{b} -
+     \mathcal{F}^2 = 0.
+\end{align}
 \label{eq_cal_quad_ns}
 \tag{13}
 $$

@@ -20,9 +20,11 @@ var F = 46.85,
     D = 12.00803 * Math.PI / 180.;
 
 // sizes
+
 var width  = window.innerWidth,
     height = window.innerHeight,
     aspectRatio = width / height,
+    ratio = window.devicePixelRatio || 1,
     viewSize = 1.2 * 2 * F;
 
 function initScene() {
@@ -36,8 +38,10 @@ function initScene() {
     camera.position.set( -2 * F , 2 * F, -2 * F );
 
     renderer = new THREE.WebGLRenderer();
-    renderer.setSize( width, height );
     renderer.setClearColor( 0xffffff );
+    renderer.setSize( width * ratio, height * ratio );
+    renderer.domElement.style.width = width + 'px';
+    renderer.domElement.style.height = height + 'px';
 
     document.body.appendChild( renderer.domElement );
 
