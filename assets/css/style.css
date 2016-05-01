@@ -418,6 +418,7 @@ img.pull-left {
   display: none;
   float: left;
   margin: 7px 10px 7px 0px;
+  box-shadow: none;
 }
 
 .site-title {
