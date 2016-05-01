@@ -408,12 +408,16 @@ img.pull-left {
   margin: 7px 10px 7px -28px;
   border-radius: 50%;
   background-color: #57ad68;
+  box-shadow:
+    -2px 2px #e67e22,
+    2px -2px #f1c40f,
+    1px 3px rgba(87,173,104,0.3);
 }
 
 .site-logo-print {
   display: none;
   float: left;
-  margin: 7px 10px 7px -28px;
+  margin: 7px 10px 7px 0px;
 }
 
 .site-title {

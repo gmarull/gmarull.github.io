@@ -25,13 +25,15 @@ var utils = (function () {
 
         this.ctx.scale(this.dpr, this.dpr);
 
-        /* Setup limits and range */
+        /* Setup limits, range, step */
         this.limits = options.limits;
 
         this.range = {
             x: this.limits.xmax - this.limits.xmin,
             y: this.limits.ymax - this.limits.ymin
         };
+
+        this.step = this.range.x / options.samples;
 
     };
 
@@ -42,8 +44,8 @@ var utils = (function () {
                        (1.0 / this.dpr) * this.cvs.height / this.range.y);
     };
 
-    ut.Figure.prototype.parametricPlot = function (f, g, range, options) {
-        var u;
+    ut.Figure.prototype.plot = function (f, options) {
+        var x;
 
         options = options || {};
 
@@ -55,13 +57,12 @@ var utils = (function () {
         this.transformContext();
 
         this.ctx.beginPath();
-        this.ctx.moveTo(f(range.min), g(range.min));
+        this.ctx.moveTo(this.limits.xmin, f(this.limits.xmin));
 
-        for (u = range.min + range.step; u <= range.max; u += range.step) {
-            this.ctx.lineTo(f(u), g(u));
+        for (x = this.limits.xmin + this.step; x <= this.limits.xmax; x += this.step) {
+            this.ctx.lineTo(x, f(x));
         }
 
-        this.ctx.closePath();
         this.ctx.restore();
 
         /* Line style, color, etc. */
@@ -89,20 +90,23 @@ var utils = (function () {
 
 
 /**
- * Plot Lissajous curve
+ * Plot logo
  */
-var fig = new utils.Figure({
-    canvas: document.querySelector('.site-logo'),
-    limits: {
-        xmin: -1,
-        xmax: 1,
-        ymin: -1,
-        ymax: 1
-    }
-});
-
+var logo = document.querySelector('.site-logo');
 var timeLast = (new Date()).getTime();
 var theta = 0;
+var noise = 0;
+
+var fig = new utils.Figure({
+    canvas: logo,
+    limits: {
+        xmin: -1.25 * Math.PI,
+        xmax:  1.25 * Math.PI,
+        ymin: -1,
+        ymax:  1
+    },
+    samples: 25
+});
 
 function drawLogo() {
     var time = (new Date()).getTime(),
@@ -112,22 +116,28 @@ function drawLogo() {
 
     theta = (theta + 0.25 * (timeDiff / 1000) * (2 * Math.PI)) % (2 * Math.PI);
 
-    fig.parametricPlot(function (u) {
-        return 0.65*Math.sin(u + theta);
-    }, function (u) {
-        return 0.65*Math.sin(3*u + theta);
+    fig.plot(function (u) {
+        return 0.5 * Math.sin(u + theta) + noise * 0.25 * (Math.random() - 0.5);
     }, {
-        min: 0,
-        max: 2 * Math.PI,
-        step: 1 / (2 * Math.PI * 25)
-    }, {
-        color: 'white',
-        lineWidth: 1
+        color: '#fff',
+        lineWidth: 2
     });
 }
 
 var loop = setInterval(drawLogo, 1000 / 30);
 
+/* noise effect */
+function noiseCallback() {
+    if (noise) {
+        noise = 0;
+    } else {
+        noise = 1;
+    }
+
+    setTimeout(noiseCallback, 5000 - noise * 4000 + 1000 * (Math.random() - 0.5));
+}
+
+setTimeout(noiseCallback, 5000);
 
 /**
  * Fluidvids
