@@ -91,7 +91,7 @@ html {
 
 body {
   margin: 0 auto;
-  font: 1em/1.4 "PT Serif", serif;
+  font: 300 1em/1.4 "Lato", sans-serif;
   color: rgba(0, 0, 0, 0.75);
   word-wrap: break-word;
   text-rendering: optimizeLegibility;
@@ -135,7 +135,7 @@ p {
 }
 
 strong {
-  font-weight: 600;
+  font-weight: 400;
 }
 
 blockquote {
