@@ -28,6 +28,74 @@
  * 0. Fonts
  */
 
+/* Fira Sans */
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('../fonts/fira/FiraSans-Light.eot');
+    src: url('../fonts/fira/FiraSans-Light.eot') format('embedded-opentype'),
+         url('../fonts/fira/FiraSans-Light.woff2') format('woff2'),
+         url('../fonts/fira/FiraSans-Light.woff') format('woff'),
+         url('../fonts/fira/FiraSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('../fonts/fira/FiraSans-LightItalic.eot');
+    src: url('../fonts/fira/FiraSans-LightItalic.eot') format('embedded-opentype'),
+         url('../fonts/fira/FiraSans-LightItalic.woff2') format('woff2'),
+         url('../fonts/fira/FiraSans-LightItalic.woff') format('woff'),
+         url('../fonts/fira/FiraSans-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('../fonts/fira/FiraSans-Regular.eot');
+    src: url('../fonts/fira/FiraSans-Regular.eot') format('embedded-opentype'),
+         url('../fonts/fira/FiraSans-Regular.woff2') format('woff2'),
+         url('../fonts/fira/FiraSans-Regular.woff') format('woff'),
+         url('../fonts/fira/FiraSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('../fonts/fira/FiraSans-Medium.eot');
+    src: url('../fonts/fira/FiraSans-Medium.eot') format('embedded-opentype'),
+         url('../fonts/fira/FiraSans-Medium.woff2') format('woff2'),
+         url('../fonts/fira/FiraSans-Medium.woff') format('woff'),
+         url('../fonts/fira/FiraSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Latin Modern Mono */
+@font-face {
+  font-family: 'lmm';
+  src: url('../fonts/lmm/lmmr.eot');
+  src: url('../fonts/lmm/lmmr.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/lmm/lmmr.woff') format('woff'),
+       url('../fonts/lmm/lmmr.ttf') format('truetype'),
+       url('../fonts/lmm/lmmr.svg#latin_modern_mono10_regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'lmm';
+  src: url('../fonts/lmm/lmmi.eot');
+  src: url('../fonts/lmm/lmmi.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/lmm/lmmi.woff') format('woff'),
+       url('../fonts/lmm/lmmi.ttf') format('truetype'),
+       url('../fonts/lmm/lmmi.svg#latin_modern_mono10_italic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
 /* Icon font (based on FontAwesome) */
 @font-face {
   font-family: 'icons';
@@ -91,7 +159,7 @@ html {
 
 body {
   margin: 0 auto;
-  font: 300 1em/1.4 "Lato", sans-serif;
+  font: 300 1em/1.4 'Fira Sans', sans-serif;
   color: rgba(0, 0, 0, 0.75);
   word-wrap: break-word;
   text-rendering: optimizeLegibility;
@@ -109,7 +177,7 @@ a {
 h1, h2, h3,
 h4, h5, h6 {
   margin: 0 0 0.5em;
-  font-family: "PT Sans", sans-serif;
+  font-weight: 500;
   line-height: 1em;
 }
 
@@ -156,7 +224,7 @@ dl dt {
 
 /* Code and related */
 code, kbd, pre, samp {
-  font-family: "Inconsolata", monospace;
+  font-family: "lmm", monospace;
   word-wrap: normal;
 }
 
@@ -417,7 +485,7 @@ img.pull-left {
 .site-logo-print {
   display: none;
   float: left;
-  margin: 7px 10px 7px 0px;
+  margin: 7px 10px 7px 28px;
   box-shadow: none;
 }
 
@@ -447,7 +515,7 @@ img.pull-left {
 .site-nav a {
   display: block;
   padding: 12px 15px 7px 15px;;
-  font: 18px/1 "PT Sans", sans-serif;
+  font: 18px/1 'Fira Sans', sans-serif;
   color: rgba(0, 0, 0, 0.8);
   text-transform: uppercase;
   border-bottom: transparent 5px solid;
@@ -479,7 +547,7 @@ label[for=site-nav-trigger] {
 .site-footer {
   margin: 2em auto 0;
   padding: 1em 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   text-align: center;
   color: rgba(0, 0, 0, 0.3);
 }
@@ -576,7 +644,6 @@ label[for=site-nav-trigger] {
 }
 
 .post-date {
-  font-family: "PT Sans", sans-serif;
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -642,7 +709,6 @@ label[for=site-nav-trigger] {
 
 .pagination {
   position: relative;
-  font-family: "PT Sans", sans-serif;
   line-height: 2em;
   color: rgba(0,0,0,0.3);
   text-align: center;
@@ -705,7 +771,6 @@ label[for=site-nav-trigger] {
 
 .cv-entry-meta {
   margin-bottom: 0.5em;
-  font-family: "PT Sans", sans-serif;
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -714,9 +779,6 @@ label[for=site-nav-trigger] {
 }
 
 /* Header */
-.cv-header {
-  font-family: "PT Sans", sans-serif;
-}
 
 .cv-header span {
   margin-left: 0.3em;
@@ -766,30 +828,5 @@ label[for=site-nav-trigger] {
 .highlight {
   margin: 0;
   border-radius: 4px;
-}
-
-/* Gist (GitHub) */
-.gist .gist-file {
-  font-family: "Inconsolata", monospace !important;
-}
-
-.gist .markdown-body {
-  padding: 1em;
-}
-
-.gist pre {
-  padding: 0;
-  background-color: transparent;
-}
-
-.gist .gist-file .gist-data {
-  font-size: .8em !important;
-}
-
-.gist code {
-  padding: 0;
-  color: inherit;
-  background-color: transparent;
-  border-radius: 0;
 }
 
