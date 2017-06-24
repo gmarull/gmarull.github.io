@@ -10,7 +10,7 @@ author:
     url: 'http://www.teslabs.com'
 
 # setup
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 
 permalink: '/articles/:title/'
 
