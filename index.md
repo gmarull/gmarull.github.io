@@ -15,9 +15,8 @@ my [CV](/cv/).
 
 ### Find me on...
 
-* [Facebook](//facebook.com/gmarullp)
 * [LinkedIn](//uk.linkedin.com/in/gmarullp)
-* [Github](//github.com/teslabs)
+* [Github](//github.com/gmarull)
 * [bl.ocks.org](//bl.ocks.org/teslabs)
 
 {% assign total_posts = site.posts | size %}
