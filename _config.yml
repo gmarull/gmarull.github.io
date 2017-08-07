@@ -7,7 +7,7 @@ description: >
 author:
     name: 'Gerard Marull-Paretas'
     email: 'gerardmarull@gmail.com'
-    url: 'http://www.teslabs.com'
+    url: 'https://www.teslabs.com'
 
 # setup
 plugins: [jekyll-paginate]
