@@ -5,7 +5,7 @@ permalink: /
 
 # Welcome!
 
-![Author]({{ site.url }}/content/home/author.jpg){: .pull-right style="width: 31%"}
+![Author](/content/home/author.jpg){: .pull-right style="width: 31%"}
 
 My name is Gerard Marull-Paretas and I am a
 [Catalan](http://en.wikipedia.org/wiki/Catalonia) [Telecommunications
