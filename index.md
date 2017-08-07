@@ -9,9 +9,10 @@ permalink: /
 
 My name is Gerard Marull-Paretas and I am a
 [Catalan](http://en.wikipedia.org/wiki/Catalonia) [Telecommunications
-Engineer](http://en.wikipedia.org/wiki/Telecommunications_engineering). This
-site serves as a place to occasionally write some articles as well as to display
-my [CV](/cv/).
+Engineer](http://en.wikipedia.org/wiki/Telecommunications_engineering). I
+currently work for [Ingenia](http://ingeniamc.com) and from time
+to time as a freelance, too. This site serves as a place to occasionally write
+some articles as well as to display my [CV](/cv/).
 
 ### Find me on...
 
