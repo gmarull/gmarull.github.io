@@ -123,12 +123,13 @@
   text-transform: none;
 }
 
-.icon-globe:before { content: '\e800'; }
-.icon-home:before { content: '\e801'; }
-.icon-mail:before { content: '\e802'; }
-.icon-print:before { content: '\e803'; }
-.icon-frown:before { content: '\e804'; }
-.icon-chat:before { content: '\e805'; }
+.icon-globe:before { content: '\f0ac'; }
+.icon-home:before { content: '\f015'; }
+.icon-mail:before { content: '\f003'; }
+.icon-print:before { content: '\f02f'; }
+.icon-frown:before { content: '\f119'; }
+.icon-chat:before { content: '\f086'; }
+.icon-github:before { content: '\f09b'; }
 
 
 /**

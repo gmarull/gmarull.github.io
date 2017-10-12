@@ -18,6 +18,10 @@ permalink: /cv/
         <span>teslabs.com</span>
       </div>
       <div class="grid-col-100">
+        <i class="icon-github"></i>
+        <a href="https://github.com/gmarull">gmarull</a>
+      </div>
+      <div class="grid-col-100">
         <i class="icon-mail"></i>
         <span>gerard@teslabs.com</span>
       </div>
@@ -53,8 +57,8 @@ permalink: /cv/
     <ul>
       <li>
           Development of open-source <a
-          href="http://github.com/ingeniamc">multiplatform libraries</a> (e.g.
-          serial/CAN communications, CANopen stack, motion control, etc.)
+          href="http://github.com/ingeniamc">multiplatform libraries</a> for
+          communications and motion control
       </li>
       <li>
           Design and development of the automated hardware testing platform
@@ -63,8 +67,8 @@ permalink: /cv/
           Python-)
       </li>
       <li>
-          Motion control applications (e.g. Google gimbal, XY two-axis board,
-          synchronous motion, etc.)
+          Development of motion control/robotics applications (e.g. Google
+          gimbal, XY two-axis board, synchronous motion, etc.)
       </li>
     </ul>
 
@@ -81,7 +85,9 @@ permalink: /cv/
       </div>
       <div class="grid-col-33">
         <div class="content">
-            <iframe class="borderless" src="https://player.vimeo.com/video/192793609?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <a href="https://s3.eu-central-1.amazonaws.com/ingeniamc-cdn/images/examples-scope.gif">
+              <img src="{{ '/content/cv/app-example.gif' | prepend: site.baseurl }}" alt="Application example">
+            </a>
         </div>
       </div>
       <div class="grid-col-33">
@@ -309,13 +315,13 @@ permalink: /cv/
   <div class="cv-entry">
     <h3 class="cv-entry-title">Languages and libraries</h3>
     <p>
-      Extensive experience with <strong>C</strong> and <strong>Python</strong>
-      (including <strong>Numpy</strong>, <strong>SciPy</strong> and
-      <strong>Matplotlib</strong>). Non-trivial experience with
-      <strong>Qt/PyQt</strong> GUI toolking, <strong>C++</strong> and
-      <strong>bash scripting</strong>. Familiar with <strong>testing</strong>.
-      Some experience with <strong>MPI</strong> (Message Passing Interface) and
-      <strong>Linux Kernel</strong> drivers.
+      Extensive experience with <strong>C</strong> and <strong>Python</strong>.
+      Familiar with <strong>cffi</strong> Python C extensions,
+      <strong>Numpy</strong>, <strong>SciPy</strong>,
+      <strong>Matplotlib</strong>, <strong>PyQt/PySide</strong>. Non-trivial
+      experience with <strong>C++</strong> and <strong>bash scripting</strong>.
+      Familiar with <strong>testing</strong> and <strong>CI/CD</strong>.
+      Some experience with <strong>Linux Kernel</strong> drivers.
     </p>
   </div>
 
@@ -323,13 +329,13 @@ permalink: /cv/
     <h3 class="cv-entry-title">Development tools</h3>
     <p>
       <strong>Vim</strong> and <strong>Tmux</strong> enthusiastic. Worked many
-      years using SCM systems including <strong>Perforce</strong>,
-      <strong>GIT</strong> and <strong>SVN</strong>. Experience configuring
+      years using SCM systems including <strong>GIT</strong>,
+      <strong>Perforce</strong> and <strong>SVN</strong>. Experience configuring
       complex multiplatform projects with <strong>CMake</strong>. Familiar with
-      continuous integration. Configured a distributed build and test system
-      using <strong>Jenkins</strong> for multiple groups. Experience with
-      <strong>Doxygen</strong> and <strong>Sphinx</strong> documentation
-      systems. Also familiar writing in LaTeX.
+      multiple continuous integration tools (<strong>Jenkins, Travis,
+      AppVeyor</strong>). Experience with <strong>Doxygen</strong> and
+      <strong>Sphinx</strong> documentation systems. Also familiar writing in
+      LaTeX.
     </p>
   </div>
 
@@ -351,10 +357,10 @@ permalink: /cv/
   <div class="cv-entry">
     <h3 class="cv-entry-title">Standards</h3>
     <p>
-      Experience using <strong>POSIX</strong> APIs. Experience writing
-      <strong>MISRA C 2012</strong> compliant code (verification with PC-Lint).
-      Experience with <strong>CANopen</strong> (CiA-301, 305, 402). Some
-      experience with <strong>EtherCAT</strong>.
+      Frequent user of the <strong>POSIX</strong> and <strong>Win32</strong>
+      APIs. Experience writing <strong>MISRA C 2012</strong> compliant code
+      (verification with PC-Lint). Experience with <strong>CANopen</strong>
+      (CiA-301, 305, 402). Some experience with <strong>EtherCAT</strong>.
     </p>
   </div>
 
@@ -382,11 +388,10 @@ permalink: /cv/
   </div>
 
   <div class="cv-entry">
-    <h3 class="cv-entry-title">Electronics and RF</h3>
+    <h3 class="cv-entry-title">Electronics</h3>
     <p>
       Extensive experience with <strong>EagleCAD PCB</strong> design tool.
-      Familiar with schematics. Some experience with <strong>Agilent ADS</strong>
-      and <strong>Ansys HFSS</strong> RF design tools.
+      Familiar with schematics.
     </p>
   </div>
 
