@@ -96,7 +96,7 @@ $$
 \begin{align}
 \mathit{S} :~ & ax^2 + by^2 + cz^2 + \\
               & 2fyz + 2gxz + 2hxy + \\
-	      & 2px + 2qy + 2rz + d = 0.
+	      & px + qy + rz + d = 0.
 \end{align}
 \label{eq_quad_gen}
 \tag{2}
@@ -125,9 +125,9 @@ and $$\mathbf{M}$$, $$\mathbf{n}$$ are, respectively:
 $$
 \mathbf{M} =
 \begin{bmatrix}
-    a & f & g \\
-    f & b & h \\
-    g & h & c
+    a & h & g \\
+    h & b & f \\
+    g & f & c
 \end{bmatrix},
 ~~
 \mathbf{n} =
