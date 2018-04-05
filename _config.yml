@@ -1,14 +1,14 @@
 # site and author details
-title: 'TESLABS'
+title: 'Teslabs Engineering'
 description: >
-    TESLABS is the personal web page of Gerard Marull-Paretas, where you will
-    find his profile and some technical articles
+    Teslabs Engineering is a company offering a wide range of engineering
+    services.
 
 url: 'https://teslabs.com'
 
 author:
     name: 'Gerard Marull-Paretas'
-    email: 'gerardmarull@gmail.com'
+    email: 'gerard@teslabs.com'
     url: 'https://www.teslabs.com'
 
 # setup
@@ -23,7 +23,11 @@ paginate_path: 'articles/page/:num'
 navigation:
 - text: Home
   url: /
+- text: Services
+  url: /services/
+- text: Portfolio
+  url: /portfolio/
 - text: Articles
   url: /articles/
-- text: Me
-  url: /cv/
+- text: Contact
+  url: /contact/

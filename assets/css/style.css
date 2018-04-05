@@ -6,7 +6,7 @@
            \ \__\ \____\/\____/ /\____\ \__/.\_\\ \_,__/\/\____/
             \/__/\/____/\/___/  \/____/\/__/\/_/ \/___/  \/___/
 
-             by Gerard Marull-Paretas <gerardmarull@gmail.com>
+             by Gerard Marull-Paretas <gerard@teslabs.com>
 */
 
 /**
@@ -19,8 +19,9 @@
  * 4. Site
  * 5. Posts
  * 6. Pagination
- * 7. CV
+ * 7. Sections
  * 8. Misc
+ * 9. Forms
  */
 
 
@@ -493,10 +494,20 @@ img.pull-left {
 .site-title {
   margin: 15px 0;
   float: left;
-  font-weight: normal;
-  font-size: 40px;
-  line-height: 1em;
+}
+
+.site-title-title {
   color: rgba(0, 0, 0, 0.75);
+  font-size: 27px;
+  margin-bottom: 0;
+  letter-spacing: 1px;
+}
+
+.site-title-subtitle {
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 18px;
+  margin-bottom: 0;
+  font-weight: normal;
 }
 
 /* Navigation menu */
@@ -628,7 +639,7 @@ label[for=site-nav-trigger] {
 
 
 /**
- * 4. Posts
+ * 5. Posts
  */
 
 .post-header {
@@ -705,7 +716,7 @@ label[for=site-nav-trigger] {
 
 
 /**
- * 5. Pagination
+ * 6. Pagination
  */
 
 .pagination {
@@ -746,50 +757,50 @@ label[for=site-nav-trigger] {
 
 
 /**
- * 6. CV
+ * 7. Sections
  */
 
 /* Sections */
-.cv-section {
+.section {
   position: relative;
   margin-bottom: 1.5em;
 }
 
 /* Section entries */
-.cv-bio {
+.section-bio {
   margin-top: 1em;
   margin-bottom: 1.5em;
 }
 
-.cv-entry {
+.section-entry {
   margin-bottom: 1.5em;
 }
 
-.cv-entry-title {
+.section-entry-title {
   margin-bottom: 0.25em;
   font-size: 1em;
 }
 
-.cv-entry-meta {
+.section-entry-meta {
   margin-bottom: 0.5em;
   color: rgba(0, 0, 0, 0.3);
 }
 
-.cv-entry-date {
+.section-entry-date {
   text-align: right;
 }
 
 /* Header */
 
-.cv-header span {
+.section-header span {
   margin-left: 0.3em;
 }
 
-.cv-print {
+.section-print {
   text-align: right;
 }
 
-.cv-print-btn {
+.section-print-btn {
   display: inline-block;
   width: 2em;
   height: 2em;
@@ -803,26 +814,18 @@ label[for=site-nav-trigger] {
 }
 
 @media screen and (max-width: 56em) {
-  .cv-entry-date {
+  .section-entry-date {
     text-align: left;
   }
 
-  .cv-print {
-    display: none;
-  }
-}
-
-@media print {
-  .cv .site-header,
-  .cv .site-footer,
-  .cv-print {
+  .section-print {
     display: none;
   }
 }
 
 
 /**
- * 6. Misc
+ * 8. Misc
  */
 
 /* Syntax */
@@ -831,3 +834,73 @@ label[for=site-nav-trigger] {
   border-radius: 4px;
 }
 
+
+/**
+ * 9. Forms.
+ */
+
+.form .field {
+  clear: both;
+  margin: 0 0 1em;
+}
+
+.form input[type=date],
+.form input[type=datetime-local],
+.form input[type=email],
+.form input[type=file],
+.form input[type=number],
+.form input[type=password],
+.form input[type=search],
+.form input[type=tel],
+.form input[type=text],
+.form input[type=time],
+.form input[type=url],
+.form textarea {
+    margin: 0;
+    width: 100%;
+    outline: 0;
+    line-height: 1.2em;
+    padding: 0.5em;
+    border: 1px solid rgba(34, 36, 38, .15);
+    color: rgba(0, 0, 0, .87);
+    border-radius: 4px;
+    transition: color .1s ease, border-color .1s ease;
+}
+
+.form input[type=date]:focus,
+.form input[type=datetime-local]:focus,
+.form input[type=email]:focus,
+.form input[type=file]:focus,
+.form input[type=number]:focus,
+.form input[type=password]:focus,
+.form input[type=search]:focus,
+.form input[type=tel]:focus,
+.form input[type=text]:focus,
+.form input[type=time]:focus,
+.form input[type=url]:focus,
+.form textarea:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #57ad68;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(87, 173, 104, .25);
+}
+
+.form textarea {
+    height: 12em;
+    min-height: 8em;
+    max-height: 24em;
+}
+
+.form .field>label {
+  display: block;
+  margin: 0 0 .2em 0;
+}
+
+.form button {
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  background-color: #57ad68;
+}

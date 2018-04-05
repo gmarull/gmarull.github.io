@@ -5,24 +5,15 @@ permalink: /
 
 # Welcome!
 
-![Author](/content/home/author.jpg){: .pull-right style="width: 31%"}
-
-My name is Gerard Marull-Paretas and I am a
-[Catalan](http://en.wikipedia.org/wiki/Catalonia) [Telecommunications
-Engineer](http://en.wikipedia.org/wiki/Telecommunications_engineering). I
-currently work for [Ingenia](http://ingeniamc.com) and from time
-to time as a freelance, too. This site serves as a place to occasionally write
-some articles as well as to display my [CV](/cv/).
-
-### Find me on...
-
-* [LinkedIn](//uk.linkedin.com/in/gmarullp)
-* [Github](//github.com/gmarull)
-* [bl.ocks.org](//bl.ocks.org/teslabs)
+Teslabs Engineering is a small engineering consultancy owned by Gerard
+Marull-Paretas, a Software and Electrical Engineer. It is located at the
+Barcelona area offering Software and Electrical Engineering services. You can
+check what we can offer on the [Services](/services) page. We offer on-site
+services as well as remote work.
 
 {% assign total_posts = site.posts | size %}
 {% if total_posts >= 1 %}
-## Latest articles
+## Latest technical articles
 <ul>
   {% for post in site.posts limit: 5 %}
   <li>
