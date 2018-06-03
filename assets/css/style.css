@@ -163,6 +163,7 @@ body {
   margin: 0 auto;
   font: 300 1em/1.4 'Fira Sans', sans-serif;
   color: rgba(0, 0, 0, 0.75);
+  background-color: #fff;
   word-wrap: break-word;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
