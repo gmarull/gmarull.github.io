@@ -1,25 +1,47 @@
 ---
-layout: default
+layout: base
 permalink: /contact/
 ---
 
-<h1>Contact</h1>
+<div class="gallery siema">
+  <div class="gallery-slide-small">
+    <!-- Photo by Enes on Unsplash -->
+    <img class="gallery-image" src="/content/contact/barcelona.jpg"/>
+    <div class="gallery-meta">
+      <h1>Contact</h1>
+    </div>
+    <div class="gallery-color-overlay"></div>
+  </div>
+</div>
 
-<p>Do you have questions? Would you like to start a project with us? Feel free
-to call us at <a href="tel:+34622321312">+34 622 321 312</a> or fill out the
-form you will find below and we will be in touch with you at lightning
-speed.</p>
+<script>
+  let gallery = new Siema({
+    draggable: false
+  });
+</script>
 
-<form class="form" method="POST" action="https://formspree.io/gerard@teslabs.com">
-  <div class="field">
-    <input type="text" name="name" placeholder="Name">
+<div class="container">
+  <div class="text-center">
+    <h1>
+      Questions? New projects?
+    </h1>
+    <p>
+      Feel free to call us at <a href="tel:+34622321312">+34 622 321 312</a> or
+      fill out the form you will find below and we will be in touch with you at
+      lightning speed.
+    </p>
   </div>
-  <div class="field">
-    <input type="email" name="email" placeholder="E-Mail">
-  </div>
-  <div class="field">
-    <textarea name="message" placeholder="Your message"></textarea>
-  </div>
-  <input type="text" name="_gotcha" style="display:none" />
-  <button type="submit">Send</button>
-</form>
+  <form class="form" method="POST" action="https://formspree.io/gerard@teslabs.com">
+    <div class="field">
+      <input type="text" name="name" placeholder="Name">
+    </div>
+    <div class="field">
+      <input type="email" name="email" placeholder="E-Mail">
+    </div>
+    <div class="field">
+      <textarea name="message" placeholder="Your message"></textarea>
+    </div>
+    <input type="text" name="_gotcha" style="display:none" />
+    <button type="submit">Send</button>
+  </form>
+</div>
