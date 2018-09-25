@@ -1,0 +1,107 @@
+---
+layout: base
+permalink: /
+---
+
+<div class="gallery siema">
+  <div class="gallery-slide">
+    <img class="gallery-image" src="/content/home/gallery/development-practices.png"/>
+    <div class="gallery-meta">
+      <p>Software Development</p>
+      <h1>Up-To-Date Development Practices</h1>
+      <a href="/services">Learn more</a>
+    </div>
+    <div class="gallery-color-overlay"></div>
+  </div>
+  <div class="gallery-slide">
+    <!-- Photo by Craig Dennis from Pexels -->
+    <img class="gallery-image" src="/content/home/gallery/industrial-automation.jpeg"/>
+    <div class="gallery-meta">
+      <p>Industrial Automation</p>
+      <h1>Advanced Motion Control Solutions</h1>
+      <a href="/services">Learn more</a>
+    </div>
+    <div class="gallery-color-overlay"></div>
+  </div>
+  <div class="gallery-slide">
+    <!-- Photo by Anton Mislawsky from Pexels -->
+    <img class="gallery-image" src="/content/home/gallery/embedded.jpeg"/>
+    <div class="gallery-meta">
+      <p>Embedded Systems & IoT</p>
+      <h1>Connected Solutions</h1>
+      <a href="/services">Learn more</a>
+    </div>
+    <div class="gallery-color-overlay"></div>
+  </div>
+</div>
+
+<script>
+  let gallery = new Siema({
+    loop: true,
+    duration: 500
+  });
+
+  setInterval(() => {
+    if (document.hasFocus()) {
+      gallery.next()
+    }
+  }, 5000);
+</script>
+
+<div class="container">
+  <div class="section text-center">
+    <h1>Your Technology Partner</h1>
+    <p>
+      Teslabs Engineering is a consultancy specialized in software and
+      electrical engineering projects. We develop custom full solutions and
+      assist our customers on their projects.
+    </p>
+  </div>
+  <div class="section">
+    <div class="row middle-xs center-xs">
+      <div class="col-sm-6">
+        <img src="/content/home/scope.gif" alt="Scope"/>
+      </div>
+      <div class="col-sm-6">
+        <h6 class="text-uppercase text-muted">Services</h6>
+        <p>
+          Find out about our mission, our services, and how we work to deliver
+          the best quality results.
+        </p>
+        <a class="link-button" href="/services">Learn More</a>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="row middle-xs center-xs">
+      <div class="col-sm-6">
+        <h6 class="text-uppercase text-muted">We are here to help</h6>
+        <p>
+          Ready to take the next step on your technology project? We are here
+          to help you!
+        </p>
+        <a class="link-button" href="/contact">Contact Us</a>
+      </div>
+      <div class="col-sm-6">
+        <img src="/content/home/project.jpg" alt="Project"/>
+      </div>
+    </div>
+  </div>
+  <div class="section text-center">
+    <h1>Some of our Customers</h1>
+    <div class="row middle-xs">
+      <div class="col-xs-3">
+        <img src="/content/home/customers/orchard.svg" alt="Orchard Systems"/>
+      </div>
+      <div class="col-xs-3">
+        <img src="/content/home/customers/vacway.png" alt="Vacway Waterproof"/>
+      </div>
+      <div class="col-xs-3">
+        <img src="/content/home/customers/altran.svg" alt="Altran"/>
+      </div>
+      <div class="col-xs-3">
+        <img src="/content/home/customers/cinergia.jpg" alt="Cinergia"/>
+      </div>
+    </div>
+  </div>
+</div>
