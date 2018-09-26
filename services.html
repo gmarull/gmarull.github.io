@@ -1,92 +1,127 @@
 ---
-layout: default
+layout: base
 permalink: /services/
 ---
 
-<section class="cv-section">
-  <h1>Engineering and technical services</h1>
+<div class="gallery siema">
+  <div class="gallery-slide-small">
+    <!-- Photo by Enes on Unsplash -->
+    <img class="gallery-image" src="/content/services/gallery-pcb.jpeg"/>
+    <div class="gallery-meta">
+      <h1>Services</h1>
+    </div>
+    <div class="gallery-color-overlay"></div>
+  </div>
+</div>
 
-  <p>We offer analysis, design, development and integration of hardware and
-  software systems for consumer products, industrial solutions, network
-  infrastructure and research applications. We can also help companies on
-  automating processes such as builds and testing, training on development
-  practices, or any other engineering aspects. We offer remote work, on-premises
-  work or whatever fits your needs.</p>
-</section>
+<script>
+  let gallery = new Siema({
+    draggable: false
+  });
+</script>
 
-<section class="cv-section">
-  <h2>Project experience</h2>
-
-  <ul>
-    <li>Systems Engineering, Integration & Architecture support</li>
-    <li>Numerical analysis and algorithm development</li>
-    <li>Real-time data acquisition and analysis</li>
-    <li>Software and hardware automated testing</li>
-    <li>Integral web solutions (backend + frontend)</li>
-    <li>Multiplatform native libraries and desktop applications</li>
-    <li>Open source software development, tools and processes</li>
-    <li>Embedded systems full solutions</li>
-    <li>Industrial protocols</li>
-    <li>Robotics applications</li>
-    <li>Network infrastructure design and deployment</li>
-    <li>Cloud infrastructure</li>
-    <li>Processes automation</li>
-  </ul>
-</section>
-
-<section class="cv-section">
-  <h2>Technical skills</h2>
-
-  <h6>Development tools and practices:</h6>
-  <ul>
-    <li><a href="https://github.com/gmarull">Git</a></li>
-    <li>Continuous Integration (CI) with Jenkins, Travis, AppVeyor...</li>
-    <li>Continuous Deployment (CD)</li>
-    <li>Project/Issue Management</li>
-    <li>Automated documentation (Doxygen, Sphinx)</li>
-    <li>CMake</li>
-    <li>Vim and Tmux</li>
-  </ul>
-
-  <h6>Programming languages and toolkits:</h6>
-  <ul>
-    <li>C/C++</li>
-    <li>Python</li>
-    <li>HTML/CSS/Javascript</li>
-    <li>Bash scripting</li>
-    <li>NodeJS</li>
-    <li>Qt/PyQt</li>
-    <li>POSIX, Win32 and macOS low-level APIs</li>
-    <li>Numeric Python (NumPy, SciPy, Matplotlib)</li>
-    <li>React/Redux</li>
-    <li>REST/GraphQL APIs</li>
-    <li>ExpressJS</li>
-    <li>MongoDB</li>
-  </ul>
-
-  <h6>Networking and Systems Administration</h6>
-  <ul>
-    <li>Amazon Web Services (EC2, VPC, VPN, Route53...)</li>
-    <li>IPsec based VPNs (tunnels and roadwarriors)</li>
-    <li>Active Directory deployment (Samba 4)</li>
-    <li>OpenWRT-based routers setup</li>
-    <li>Linux servers</li>
-  </ul>
-
-  <h6>Operating systems and platforms:</h6>
-  <ul>
-    <li>Main desktop operating systems: Linux, Windows and macOS</li>
-    <li>Multiple Linux-based ARM boards: RaspberryPi, BeagleBone, Firefly
-      (Rockchip)</li>
-    <li>Multiple ARM embedded microcontrollers either bare-metal or with RTOS
-    <li>Embedded platforms peripherals: SPI, I2C, DMA, GPIO, PWM, UART, Flash,
-      EEPROM...</li>
-  </ul>
-
-  <h6>Standards:</h6>
-  <ul>
-    <li>CANopen</li>
-    <li>EtherCAT</li>
-    <li>MISRA C (2012) compliance</li>
-  </ul>
-</section>
+<div class="container">
+  <section>
+    <div class="text-center">
+      <h1>Our Mission</h1>
+      <p>
+        At Teslabs Engineering we offer design and development of software and
+        hardware systems for a wide range of sectors, including: consumer
+        products, industrial automation, medical sector and research. We also
+        help companies to automate development processes and empower their
+        engineers with training on our areas of expertise.
+      </p>
+    </div>
+  </section>
+  <section>
+    <div class="text-center">
+      <h1>Our Areas of Expertise</h1>
+    </div>
+    <div class="row middle-xs">
+      <div class="col-sm-6">
+        <h6 class="text-uppercase text-muted">Languages and toolkits</h6>
+        <ul>
+          <li>C/C++</li>
+          <li>Python</li>
+          <li>Python for data analysis (NumPy, SciPy, Jupyter, Pandas...)</li>
+          <li>Web technologies: HTML/CSS/Javascript, NodeJS, React/Redux,
+            REST/GraphQL...</li>
+          <li>Qt/QML</li>
+          <li>Native operating systems APIs</li>
+          <li>Mobile Apps</li>
+        </ul>
+      </div>
+      <div class="col-sm-6">
+        <img src="/content/services/vscode.png" alt="Editor"/>
+      </div>
+    </div>
+    <div class="row middle-xs">
+      <div class="col-sm-6">
+        <img src="/content/services/pcb.jpg" alt="PCB"/>
+      </div>
+      <div class="col-sm-6">
+        <h6 class="text-uppercase text-muted">Embedded Systems</h6>
+        <ul>
+          <li>Linux ARM boards: Raspberry Pi, BeagleBone, Rockchip...</li>
+          <li>Connected devices (IoT)</li>
+          <li>Optimized Linux systems (Buildroot/Yocto)</li>
+          <li>Baremetal/RTOS ARM embedded microcontrollers (STM32)</li>
+          <li>Peripherals: SPI, I2C, UART, DMA, GPIO, PWM...</li>
+          <li>MISRA C Compliance</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row middle-xs">
+      <div class="col-sm-6">
+        <h6 class="text-uppercase text-muted">Cloud Services</h6>
+        <ul>
+          <li>Amazon Web Services</li>
+          <li>Private VPN (IPSec)</li>
+          <li>Active Directory deployment</li>
+          <li>Linux and Windows servers</li>
+        </ul>
+      </div>
+      <div class="col-sm-6">
+        <img src="/content/services/network.jpeg" alt="Network"/>
+      </div>
+    </div>
+    <div class="row middle-xs">
+      <div class="col-sm-6">
+        <img src="/content/services/meas.jpg" alt="Measurements"/>
+      </div>
+      <div class="col-sm-6">
+        <h6 class="text-uppercase text-muted">Industrial Automation</h6>
+        <ul>
+          <li>Advanced motion control applications</li>
+          <li>Industrial networking: EtherCAT, CANopen...</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="text-center">
+      <h1>Development Practices Up-To-Date</h1>
+      <p>
+        At Teslabs we are committed with the best development practices. This
+        helps us on keeping developers focused on the product and at the same
+        time achieve a high degree of quality.
+      </p>
+    </div>
+    <div class="row middle-xs">
+      <div class="col-sm-6">
+        <ul>
+          <li>Git: GitHub, Bitbucket</li>
+          <li>Continuous Integration: CircleCI, Travis, AppVeyor, Jenkins...</li>
+          <li>Continuous Deployment</li>
+          <li>Project Management: JIRA, GitHub Issues</li>
+          <li>Automated documentation systems: Sphinx, Doxygen</li>
+          <li>Automated testing: Google Test/Mock, pytest...</li>
+          <li>Automated code linting, static and dynamic analysis</li>
+        </ul>
+      </div>
+      <div class="col-sm-6">
+        <img src="/content/services/example-app.png" alt="Example App"/>
+      </div>
+    </div>
+  </section>
+</div>
