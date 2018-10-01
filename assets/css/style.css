@@ -14,7 +14,7 @@
  *
  * 0. Fonts
  * 1. Base
- * 2. Grid
+ * 2. Grid (deprecated, use flexboxgrid)
  * 3. Utilities
  * 4. Site
  * 5. Posts
@@ -953,6 +953,19 @@ label[for=site-nav-trigger] {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.gallery-shadow {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .25);
+  border-radius: 5px;
+}
+
+.gallery-right {
+  margin: 15px -30px 15px 15px;
+}
+
+.gallery-left {
+  margin: 15px 15px 15px -30px;
 }
 
 .gallery-color-overlay {

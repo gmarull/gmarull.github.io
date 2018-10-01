@@ -25,8 +25,8 @@ navigation:
   url: /
 - text: Services
   url: /services/
-- text: Portfolio
-  url: /portfolio/
+- text: Projects
+  url: /projects/
 - text: Articles
   url: /articles/
 - text: Contact

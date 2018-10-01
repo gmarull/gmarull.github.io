@@ -1,0 +1,209 @@
+---
+layout: base
+permalink: /projects/
+---
+
+<div class="gallery siema">
+  <div class="gallery-slide-small">
+    <img class="gallery-image" src="/content/projects/code.png"/>
+    <div class="gallery-meta">
+      <h1>Projects</h1>
+    </div>
+    <div class="gallery-color-overlay"></div>
+  </div>
+</div>
+
+<script>
+  let gallery = new Siema({
+    draggable: false
+  });
+</script>
+
+<div class="row middle-xs center-xs" style="margin-left: 0; margin-right: 0;">
+  <div class="col-sm-6" style="overflow: hidden;">
+    <div class="gallery-shadow gallery-left">
+      <div class="gallery gallery-scope">
+        <img src="/content/projects/scope-1.png" style="display: block; width: 100%"/>
+      </div>
+
+      <script>
+        let galleryscope= new Siema({
+          selector: '.gallery-scope',
+          draggable: false
+        });
+      </script>
+    </div>
+  </div>
+  <div class="col-sm-6" style="padding: 10px 50px;">
+    <h6 class="text-uppercase text-muted">6-Channel Oscilloscope</h6>
+    <p>
+      A 6-channel oscilloscope with standalone datalogger for measuring
+      equipment control signals. Scope server runs on embedded Linux and client
+      is a multiplatform application for real-time visualization and data
+      analysis.
+    </p>
+  </div>
+</div>
+
+<div class="row middle-xs center-xs" style="margin-left: 0; margin-right: 0;">
+  <div class="col-sm-6" style="padding: 10px 50px;">
+    <h6 class="text-uppercase text-muted">Connected PoS Solution</h6>
+    <p>
+      Collaboration with the development of a modern connected PoS solution,
+      including: terminal frontend application, backend API design, peripherals
+      configuration and setup, etc.
+    </p>
+  </div>
+  <div class="col-sm-6" style="overflow: hidden;">
+    <div class="gallery-shadow gallery-right">
+      <div class="gallery gallery-pos">
+        <img src="/content/projects/pos-1.png" style="display: block;"/>
+        <img src="/content/projects/pos-2.png" style="display: block;"/>
+        <img src="/content/projects/pos-3.png" style="display: block;"/>
+      </div>
+      <script>
+        let gallerypos= new Siema({
+          selector: '.gallery-pos',
+          loop: true,
+          duration: 500
+        });
+
+        setInterval(() => {
+          if (document.hasFocus()) {
+            gallerypos.next()
+          }
+        }, 3000);
+      </script>
+    </div>
+  </div>
+</div>
+
+<div class="row middle-xs center-xs" style="margin-left: 0; margin-right: 0;">
+  <div class="col-sm-6" style="overflow: hidden;">
+    <div class="gallery-shadow gallery-left">
+      <div class="gallery gallery-motion">
+        <img src="/content/projects/motion-code.png" style="display: block; width: 100%"/>
+        <img src="/content/projects/motion-notebook.png" style="display: block; width: 100%"/>
+        <video autoplay="" loop="" muted="" playsinline="" style="width: 100%; display: block;">
+          <source src="/content/projects/motion-scope.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <script>
+        let gallerymotion = new Siema({
+          selector: '.gallery-motion',
+          loop: true,
+          duration: 500
+        });
+
+        setInterval(() => {
+          if (document.hasFocus()) {
+            gallerymotion.next()
+          }
+        }, 5000);
+      </script>
+    </div>
+  </div>
+  <div class="col-sm-6" style="padding: 10px 50px;">
+    <h6 class="text-uppercase text-muted">Open Source Motion Control Libraries</h6>
+    <p>
+      Open source motion control library including: device detection and
+      monitoring, precise register polling, position/velocity/torque control,
+      etc. <a href="https://github.com/gmarull/ingenialink">Base library</a> is
+      multiplatform and written in pure C. A native <a
+      href="https://github.com/gmarull/ingenialink-python">Python library</a>
+      is also provided for easy prototyping.
+    </p>
+  </div>
+</div>
+
+<div class="row middle-xs center-xs" style="margin-left: 0; margin-right: 0;">
+  <div class="col-sm-6" style="padding: 10px 50px;">
+    <h6 class="text-uppercase text-muted">Magnetometer Calibration and Orientation Estimation</h6>
+    <p>
+      Algorithm for <a
+        href="https://teslabs.com/articles/magnetometer-calibration/">magnetometer
+        calibration</a> and estimation of orientation angles (Roll, Pitch, Yaw)
+      using a magnetometer and an accelerometer.
+    </p>
+  </div>
+  <div class="col-sm-6" style="overflow: hidden;">
+    <div class="gallery-shadow gallery-right">
+      <div class="gallery gallery-sensor">
+        <iframe src="{{ site.url }}/content/posts/magnetometer-calibration/example-2.html" width="90%" height="400" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+      </div>
+      <script>
+        let gallerysensor= new Siema({
+          selector: '.gallery-sensor',
+          draggable: false,
+        });
+      </script>
+    </div>
+  </div>
+</div>
+
+<div class="row middle-xs center-xs" style="margin-left: 0; margin-right: 0;">
+  <div class="col-sm-6" style="overflow: hidden;">
+    <div class="gallery-shadow gallery-left">
+      <div class="gallery">
+        <div>
+          <div class="row" style="padding: 10px 10px 10px 30px;">
+            <div class="col-sm-4">
+              <iframe class="borderless" width="420" height="315" src="https://www.youtube.com/embed/UyCA6AKYnho" allowfullscreen></iframe>
+            </div>
+            <div class="col-sm-4">
+              <iframe class="borderless" width="420" height="315" src="https://www.youtube.com/embed/YJOZykQgSPM" allowfullscreen></iframe>
+            </div>
+            <div class="col-sm-4">
+              <a class="zoom-in" href="/content/projects/meteotek_1.jpg">
+                <img src="/content/projects/meteotek_1_thumb.jpg" alt="Meteotek08">
+              </a>
+            </div>
+          </div>
+          <div class="row" style="padding: 10px 10px 10px 30px;">
+            <div class="col-sm-4">
+              <a class="zoom-in" href="/content/projects/meteotek_2.jpg">
+                <img src="/content/projects/meteotek_2_thumb.jpg" alt="Meteotek08">
+              </a>
+            </div>
+            <div class="col-sm-4">
+              <a class="zoom-in" href="/content/projects/meteotek_3.jpg">
+                <img src="/content/projects/meteotek_3_thumb.jpg" alt="Meteotek08">
+              </a>
+            </div>
+            <div class="col-sm-4">
+              <a class="zoom-in" href="/content/projects/openplayer.jpg">
+                <img src="/content/projects/openplayer_thumb.jpg" alt="Openplayer">
+              </a>
+            </div>
+          </div>
+          <div class="row" style="padding: 10px 10px 10px 30px;">
+            <div class="col-sm-4">
+              <iframe class="borderless" width="420" height="315" src="https://www.youtube.com/embed/TQuIqcJ4YH0" allowfullscreen></iframe>
+            </div>
+            <div class="col-sm-4">
+              <a class="borderless" href="https://www.dropbox.com/s/ar3gt4al5tecaml/main.pdf?dl=0">
+                <img src="/content/projects/rpi_tracker_presentation.jpg" alt="Antenna tracker presentation">
+              </a>
+            </div>
+            <div class="col-sm-4">
+              <a class="borderless" href="https://www.dropbox.com/s/agncglyg3df0ds3/presentation_noanim.pdf?dl=0">
+                <img class="full-width" src="/content/projects/mthesis.jpg" alt="Master Thesis">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6" style="padding: 10px 50px;">
+    <h6 class="text-uppercase text-muted">Historical</h6>
+    <p>
+      Our passion for Engineering comes from our younghood, when projects such
+      as the <a href="https://teslabs.com/meteotek08">Meteotek08</a> sounding
+      balloon or the MP3 player <a
+      href="https://teslabs.com/openplayer">Openplayer</a> were developed.
+    </p>
+  </div>
+</div>
