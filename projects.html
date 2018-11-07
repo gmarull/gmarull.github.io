@@ -21,16 +21,26 @@ permalink: /projects/
 
 <div class="row middle-xs center-xs" style="margin-left: 0; margin-right: 0;">
   <div class="col-sm-6" style="overflow: hidden;">
-    <div class="gallery-shadow gallery-left">
+    <div class="gallery-left">
       <div class="gallery gallery-scope">
-        <img src="/content/projects/scope-1.png" style="display: block; width: 100%"/>
+        <img src="/content/projects/cinergia-1.png" style="display: block;"/>
+        <img src="/content/projects/cinergia-2.png" style="display: block;"/>
+        <img src="/content/projects/cinergia-3.png" style="display: block;"/>
+        <img src="/content/projects/cinergia-4.png" style="display: block;"/>
       </div>
 
       <script>
         let galleryscope= new Siema({
           selector: '.gallery-scope',
-          draggable: false
+          loop: true,
+          duration: 500
         });
+
+        setInterval(() => {
+          if (document.hasFocus()) {
+            gallerypos.next()
+          }
+        }, 5000);
       </script>
     </div>
   </div>
