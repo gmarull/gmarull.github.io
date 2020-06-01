@@ -20,6 +20,40 @@ permalink: /projects/
 </script>
 
 <div class="row middle-xs center-xs" style="margin-left: 0; margin-right: 0;">
+  <div class="col-sm-6" style="padding: 10px 50px;">
+    <h6 class="text-uppercase text-muted">Vacuum and sealing machine controller</h6>
+    <p>
+      Design and production of a board to control vacuum and sealing machines.
+      Some design highlights include: main and auxiliary switching power
+      supplies, sealing control with custom modulation scheme and low
+      \(R_{DSON}\) MOSFET, dual DC motor controller. Firmware is powered
+      by Zephyr RTOS.
+    </p>
+  </div>
+  <div class="col-sm-6" style="overflow: hidden;">
+    <div class="gallery-shadow gallery-right">
+      <div class="gallery gallery-sealing">
+        <img src="/content/projects/sealing-1.jpg" style="display: block;"/>
+        <img src="/content/projects/sealing-2.jpg" style="display: block;"/>
+      </div>
+      <script>
+        let gallerypos= new Siema({
+          selector: '.gallery-sealing',
+          loop: true,
+          duration: 500
+        });
+
+        setInterval(() => {
+          if (document.hasFocus()) {
+            gallerypos.next()
+          }
+        }, 3000);
+      </script>
+    </div>
+  </div>
+</div>
+
+<div class="row middle-xs center-xs" style="margin-left: 0; margin-right: 0;">
   <div class="col-sm-6" style="overflow: hidden;">
     <div class="gallery-left">
       <div class="gallery gallery-scope">
