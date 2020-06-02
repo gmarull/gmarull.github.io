@@ -91,15 +91,41 @@ permalink: /projects/
 
 <div class="row middle-xs center-xs" style="margin-left: 0; margin-right: 0;">
   <div class="col-sm-6" style="padding: 10px 50px;">
-    <h6 class="text-uppercase text-muted">Connected PoS Solution</h6>
+    <h6 class="text-uppercase text-muted">Navigation algorithm and IMU calibration</h6>
     <p>
-      Collaboration with the development of a modern connected PoS solution,
-      including: terminal frontend application, backend API design, peripherals
-      configuration and setup, etc.
+      Development of a navigation algorithm using GPS and IMU attitude information.
+      Calibration algorithms for IMU sensors (accelerometer and magnetometer) in
+      order to achieve accurate navigation performance. Application: swimming wearables.
     </p>
   </div>
   <div class="col-sm-6" style="overflow: hidden;">
     <div class="gallery-shadow gallery-right">
+      <div class="gallery gallery-calibration">
+        <img src="/content/projects/calibration-1.jpg" style="display: block;"/>
+        <img src="/content/projects/calibration-3.jpg" style="display: block;"/>
+        <img src="/content/projects/calibration-3.jpg" style="display: block;"/>
+      </div>
+
+      <script>
+        let gallerycalibration = new Siema({
+          selector: '.gallery-calibration',
+          loop: true,
+          duration: 500
+        });
+
+        setInterval(() => {
+          if (document.hasFocus()) {
+            gallerycalibration.next()
+          }
+        }, 7000);
+      </script>
+    </div>
+  </div>
+</div>
+
+<div class="row middle-xs center-xs" style="margin-left: 0; margin-right: 0;">
+  <div class="col-sm-6" style="overflow: hidden;">
+    <div class="gallery-shadow gallery-left">
       <div class="gallery gallery-pos">
         <img src="/content/projects/pos-1.png" style="display: block;"/>
         <img src="/content/projects/pos-2.png" style="display: block;"/>
@@ -120,11 +146,30 @@ permalink: /projects/
       </script>
     </div>
   </div>
+  <div class="col-sm-6" style="padding: 10px 50px;">
+    <h6 class="text-uppercase text-muted">Connected PoS Solution</h6>
+    <p>
+      Collaboration with the development of a modern connected PoS solution,
+      including: terminal frontend application, backend API design, peripherals
+      configuration and setup, etc.
+    </p>
+  </div>
 </div>
 
 <div class="row middle-xs center-xs" style="margin-left: 0; margin-right: 0;">
+  <div class="col-sm-6" style="padding: 10px 50px;">
+    <h6 class="text-uppercase text-muted">Open Source Motion Control Libraries</h6>
+    <p>
+      Open source motion control library including: device detection and
+      monitoring, precise register polling, position/velocity/torque control,
+      etc. <a href="https://github.com/gmarull/ingenialink">Base library</a> is
+      multiplatform and written in pure C. A native <a
+      href="https://github.com/gmarull/ingenialink-python">Python library</a>
+      is also provided for easy prototyping.
+    </p>
+  </div>
   <div class="col-sm-6" style="overflow: hidden;">
-    <div class="gallery-shadow gallery-left">
+    <div class="gallery-shadow gallery-right">
       <div class="gallery gallery-motion">
         <img src="/content/projects/motion-code.png" style="display: block; width: 100%"/>
         <img src="/content/projects/motion-notebook.png" style="display: block; width: 100%"/>
@@ -149,31 +194,11 @@ permalink: /projects/
       </script>
     </div>
   </div>
-  <div class="col-sm-6" style="padding: 10px 50px;">
-    <h6 class="text-uppercase text-muted">Open Source Motion Control Libraries</h6>
-    <p>
-      Open source motion control library including: device detection and
-      monitoring, precise register polling, position/velocity/torque control,
-      etc. <a href="https://github.com/gmarull/ingenialink">Base library</a> is
-      multiplatform and written in pure C. A native <a
-      href="https://github.com/gmarull/ingenialink-python">Python library</a>
-      is also provided for easy prototyping.
-    </p>
-  </div>
 </div>
 
 <div class="row middle-xs center-xs" style="margin-left: 0; margin-right: 0;">
-  <div class="col-sm-6" style="padding: 10px 50px;">
-    <h6 class="text-uppercase text-muted">Magnetometer Calibration and Orientation Estimation</h6>
-    <p>
-      Algorithm for <a
-        href="https://teslabs.com/articles/magnetometer-calibration/">magnetometer
-        calibration</a> and estimation of orientation angles (Roll, Pitch, Yaw)
-      using a magnetometer and an accelerometer.
-    </p>
-  </div>
   <div class="col-sm-6" style="overflow: hidden;">
-    <div class="gallery-shadow gallery-right">
+    <div class="gallery-shadow gallery-left">
       <div class="gallery gallery-sensor">
         <iframe src="{{ site.url }}/content/posts/magnetometer-calibration/example-2.html" width="90%" height="400" marginwidth="0" marginheight="0" scrolling="no"></iframe>
       </div>
@@ -185,11 +210,29 @@ permalink: /projects/
       </script>
     </div>
   </div>
+  <div class="col-sm-6" style="padding: 10px 50px;">
+    <h6 class="text-uppercase text-muted">Magnetometer Calibration and Orientation Estimation</h6>
+    <p>
+      Algorithm for <a
+        href="https://teslabs.com/articles/magnetometer-calibration/">magnetometer
+        calibration</a> and estimation of orientation angles (Roll, Pitch, Yaw)
+      using a magnetometer and an accelerometer.
+    </p>
+  </div>
 </div>
 
 <div class="row middle-xs center-xs" style="margin-left: 0; margin-right: 0;">
+  <div class="col-sm-6" style="padding: 10px 50px;">
+    <h6 class="text-uppercase text-muted">Historical</h6>
+    <p>
+      Our passion for Engineering comes from our younghood, when projects such
+      as the <a href="https://teslabs.com/meteotek08">Meteotek08</a> sounding
+      balloon or the MP3 player <a
+      href="https://teslabs.com/openplayer">Openplayer</a> were developed.
+    </p>
+  </div>
   <div class="col-sm-6" style="overflow: hidden;">
-    <div class="gallery-shadow gallery-left">
+    <div class="gallery-shadow gallery-right">
       <div class="gallery">
         <div>
           <div class="row" style="padding: 10px 10px 10px 30px;">
@@ -240,14 +283,5 @@ permalink: /projects/
         </div>
       </div>
     </div>
-  </div>
-  <div class="col-sm-6" style="padding: 10px 50px;">
-    <h6 class="text-uppercase text-muted">Historical</h6>
-    <p>
-      Our passion for Engineering comes from our younghood, when projects such
-      as the <a href="https://teslabs.com/meteotek08">Meteotek08</a> sounding
-      balloon or the MP3 player <a
-      href="https://teslabs.com/openplayer">Openplayer</a> were developed.
-    </p>
   </div>
 </div>
